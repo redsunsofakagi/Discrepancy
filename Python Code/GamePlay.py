@@ -70,6 +70,7 @@ def clicktrue(n, Obj_id): #If an interactable object is clicked, dialogue begins
             SpeakBox['text']=l3[n]
             TextBox['text']=''
             for j in str1:
+                SceneScreen['state']='disabled'
                 ObjectiveBar['text']='[Read]'
                 TextBox['text']+=j
                 TextBox.update()
@@ -77,12 +78,14 @@ def clicktrue(n, Obj_id): #If an interactable object is clicked, dialogue begins
                 SceneScreen.create_window(300,400, window=TextBox)
                 SceneScreen.update()
                 SceneScreen.pack(side='bottom')
-                time.sleep(0.04)
+                time.sleep(0.03)
+            SceneScreen['state']='normal'
         elif count==(len(l4)):
             str1=l4[n]
             SpeakBox['text']=l3[n]
             TextBox['text']=''
             for j in str1:
+                SceneScreen['state']='disabled'
                 ObjectiveBar['text']='[Read]'
                 TextBox['text']+=j
                 TextBox.update()
@@ -91,6 +94,7 @@ def clicktrue(n, Obj_id): #If an interactable object is clicked, dialogue begins
                 SceneScreen.update()
                 SceneScreen.pack(side='bottom')
                 time.sleep(0.04)
+            SceneScreen['state']='normal'
             LineButton['state']='active'
             TextBox['state']='active'
     count+=1
