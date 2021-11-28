@@ -1,0 +1,12 @@
+Tutorial: Hello!
+Welcome to the Demo.
+
+Tutorial: What you're reading right now is a text box. This is used to show the dialoue and options of the game.
+
+Tutorial: Howerever, that alone is boring. Use your cursor to explore the surroundings. To check if an object is interactable, just refer to the Objective Bar above.
+
+Tutorial: It will show what you can do with the object. Examine things carefully.
+
+Tutorial: -
+
+Tutorial: Good Job!
