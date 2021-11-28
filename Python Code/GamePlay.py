@@ -6,7 +6,7 @@ import time
 GameWindow= Tk()
 GameWindow.resizable(width=False, height=False)
 GameWindow.title('Discrepancy')
-GameWindow.geometry('600x500') #size specified, bt positioning on monitor to be dealt with later.
+GameWindow.geometry('600x500') #size specified, but positioning on monitor to be dealt with later.
 
 GameFont = font.Font(family='Courier', name='GameFont', size=15, weight='bold')
 SceneImage=PhotoImage(file="Scene1.png")
