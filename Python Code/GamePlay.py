@@ -41,11 +41,11 @@ for i in range(len(event_list)):
 
 SceneScreen= Canvas(GameWindow, width=600, height=500)
 SceneScreen.create_image(300,200,image=SceneImage)
-SceneScreen.create_image(300,400,image=TextFrame)
+SceneScreen.create_image(300,400,image=TextFrame) 
 SceneScreen.create_image(300,10,image=ObjectiveFrame)
-SceneScreen.create_image(310,200,image=Obj1, tags="Body")
+SceneScreen.create_image(310,200,image=Obj1, tags="Body") #These are creating a background image on which cickable images are superimposed. Once clicked, the upper image is removed but the lower one remains. This was the only way I could make it work without removing the whole image.
 SceneScreen.create_image(510,100,image=Obj2, tags="Car")
-SceneScreen.create_image(210,250,image=Obj3, tags="Wrench")
+#SceneScreen.create_image(210,250,image=Obj3, tags="Wrench") #I have tagged this so that no lower image is generated for the wrench. This creates the impression that the wrench as been picked up by the protagonist.
 SceneScreen.pack()
 
 LineButton=ttk.Button(SceneScreen, text='     >     ')
