@@ -1,33 +1,31 @@
-#Gameplay. For real this time.
-
 from tkinter import *
 from tkinter import font
-from tkinter import ttk
+from tkinter import ttk #ttk is necessary to check whether a widget is disabled or not.
 import time
 
 GameWindow= Tk()
 GameWindow.resizable(width=False, height=False)
 GameWindow.title('Discrepancy')
-GameWindow.geometry('600x500')
+GameWindow.geometry('600x500') #size specified, bt positioning on monitor to be dealt with later.
 
 GameFont = font.Font(family='Courier', name='GameFont', size=15, weight='bold')
 SceneImage=PhotoImage(file="Scene1.png")
 TextFrame=PhotoImage(file="textframe.png")
 ObjectiveFrame=PhotoImage(file='ObjectiveFrame.png')
 
-Obj1=PhotoImage(file='DeidMann.png')
+Obj1=PhotoImage(file='DeidMann.png') #I like to think I'm funny but this is stolen from Ace Attorney
 Obj2=PhotoImage(file='BurningCar.png')
 Obj3=PhotoImage(file='BloodyWrench.png')
 
 tutorial_file = open(r"MainTutorial.txt" , 'r')
-tutorial_dialogue=tutorial_file.read()
-tutorial_list=tutorial_dialogue.split('\n\n')
+tutorial_dialogue=tutorial_file.read() #Text file stores content in a dialogue format. This is read as string.
+tutorial_list=tutorial_dialogue.split('\n\n') #Splits on spacing between lines
 l1=[]
 l2=[]
 for i in range(len(tutorial_list)):
                tup1=tutorial_list[i].partition(': ')
-               l1.append(tup1[0])
-               l2.append(tup1[-1])
+               l1.append(tup1[0]) #Stores name of speaking character
+               l2.append(tup1[-1]) #Stores dialogue spoken
 
 event_file = open(r"EventText.txt" , 'r')
 event_dialogue=event_file.read()
@@ -53,16 +51,16 @@ SceneScreen.pack()
 LineButton=ttk.Button(SceneScreen, text='     >     ')
 ObjectiveBar = Label(SceneScreen, text='', font=GameFont, foreground='white', background='black', wraplength=200)
 
-def hovertrue():
+def hovertrue(): #If the cursor moves over an interactable object, its text changes.
     if TextBox.instate(['disabled'])==True:
         ObjectiveBar['text']='[Examine]'
 
-def hoverfalse():
+def hoverfalse(): #And vice-versa
     if TextBox.instate(['disabled'])==True:
         ObjectiveBar['text']=''
 
 count=1
-def clicktrue(n, Obj_id):
+def clicktrue(n, Obj_id): #If an interactable object is clicked, dialogue begins in the text box.
     global count
     SceneScreen.delete(Obj_id)
     SceneScreen.pack()
@@ -130,7 +128,7 @@ SceneScreen.create_window(300,480, window=LineButton)
 
 k=-1
 m=-1
-def next_line():
+def next_line(): #For normal dialogue. To proceed, the button 'LineButton' is clicked. It gets 'disabled' or becomes unclickable while special events occur. Activates once over.
     global k
     global m
     k+=1
