@@ -258,14 +258,14 @@ def work():
         #devices=AudioUtilities.GetSpeakers()
         #interface=devices.Activate(IAudioEndpointVolume._iid_,CLSCTX_ALL,None)
         #volume=cast(interface,POINTER(IAudioEndpointVolume))
-        def redlevelvolume():
+        #def redlevelvolume():
             #currentvolume=volume.GetMasterVolumeLevel()
             #volume.SetMasterVolumeLevel(currentvolume-6.0,None)
         Button(frame2,text="Reduce Volume" ''', command=redlevelvolume''').place(x=250,y=130)
         #devices2=AudioUtilities.GetSpeakers()
         #interface2=devices2.Activate(IAudioEndpointVolume._iid_,CLSCTX_ALL,None)
         #volume2=cast(interface2,POINTER(IAudioEndpointVolume))
-        def inclevelvolume():
+        #def inclevelvolume():
             #currentvolume2=volume2.GetMasterVolumeLevel()
             #volume2.SetMasterVolumeLevel(currentvolume2+6.0,None)
         Button(frame2,text="Increase Volume"''',command=inclevelvolume''').place(x=100,y=130)
