@@ -1,12 +1,25 @@
-Tutorial: Hello!
-Welcome to the Demo.
+Jones: (So... this is where the call came from. It appears I was too late...)
 
-Tutorial: What you're reading right now is a text box. This is used to show the dialoue and options of the game.
+Jones: (Should gather some evidence before doing anything rash.)
 
-Tutorial: Howerever, that alone is boring. Use your cursor to explore the surroundings. To check if an object is interactable, just refer to the Objective Bar above.
+INVESTIGATE: -
 
-Tutorial: It will show what you can do with the object. Examine things carefully.
+Jones: (Hm... seems like I've collected enough. Let's talk to the distraught man over there.)
 
-Tutorial: -
+INTERROGATE: -
 
-Tutorial: Good Job!
+Jones: Yes sir. Could you tell me what happened here?
+
+Witness: Well... he, he was driving, and crashed into the tree, and, and!
+
+Jones: Please stay calm, sir.
+
+Jones: (Hm... that statement seems a little off. I should consider cross checking his statement with what I've gathered.)
+
+OPEN LOG: -
+
+Jones: Sir, would this wrench be of interest to you?
+
+Witness: !
+
+Jones: Your shock shows on your face, you know. I'll be taking you down the department for a few questions, if you don't mind.
