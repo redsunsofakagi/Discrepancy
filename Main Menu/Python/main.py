@@ -4,28 +4,29 @@ import os
 from sys import exit
 #from GamePlay import gameplay
 
+main_dir = os.path.split(os.path.abspath(__file__))[0]
 pygame.init()
 screen = pygame.display.set_mode((1280,720))
 screen.fill('Black')
 pygame.display.set_caption('Discrepancy')
 clock = pygame.time.Clock()
-selite_font = pygame.font.Font('Fonts\SpecialElite-Regular.ttf', 50)
+selite_font = pygame.font.Font(os.path.join(main_dir, 'Fonts\SpecialElite-Regular.ttf'), 50)
 
 #Load Sounds
-title_music = pygame.mixer.Sound('Sounds\\title_music.wav')
+title_music = pygame.mixer.Sound(os.path.join(main_dir, 'Sounds\\title_music.wav'))
 
 ##Load Images
-title_img = pygame.image.load('Photos\Slide1.PNG').convert_alpha()
-credits_img = pygame.image.load('Photos\Slide3.PNG').convert_alpha()
-start_img = pygame.image.load('Photos\Slide4.PNG').convert_alpha()
-options_img = pygame.image.load('Photos\Slide2.PNG').convert_alpha()
+title_img = pygame.image.load(os.path.join(main_dir, 'Photos\Slide1.PNG')).convert_alpha()
+credits_img = pygame.image.load(os.path.join(main_dir, 'Photos\Slide3.PNG')).convert_alpha()
+start_img = pygame.image.load(os.path.join(main_dir, 'Photos\Slide4.PNG')).convert_alpha()
+options_img = pygame.image.load(os.path.join(main_dir, 'Photos\Slide2.PNG')).convert_alpha()
 
 
 ##Buttons!
-clr_bttn_268x84 = pygame.image.load('Photos\clr_bttn_268x84.png').convert_alpha()
-clr_bttn_78x74 = pygame.image.load('Photos\clr_bttn_78x74.png').convert_alpha()
-clr_bttn_127x74 = pygame.image.load('Photos\clr_bttn_127x74.png').convert_alpha()
-clr_bttn_179x67 = pygame.image.load('Photos\clr_bttn_179x67.png').convert_alpha()
+clr_bttn_268x84 = pygame.image.load(os.path.join(main_dir, 'Photos\clr_bttn_268x84.png')).convert_alpha()
+clr_bttn_78x74 = pygame.image.load(os.path.join(main_dir, 'Photos\clr_bttn_78x74.png')).convert_alpha()
+clr_bttn_127x74 = pygame.image.load(os.path.join(main_dir, 'Photos\clr_bttn_127x74.png')).convert_alpha()
+clr_bttn_179x67 = pygame.image.load(os.path.join(main_dir, 'Photos\clr_bttn_179x67.png')).convert_alpha()
 
 button_start = button.Button(128,549, clr_bttn_268x84)
 button_menu = button.Button(509,549, clr_bttn_268x84)
@@ -48,7 +49,7 @@ vol_lvl=1
 music_state = True
 
 ##Load Fonts and text box
-selite_font = pygame.font.Font('Fonts\SpecialElite-Regular.ttf', 36)
+selite_font = pygame.font.Font(os.path.join(main_dir, 'Fonts\SpecialElite-Regular.ttf'), 36)
 control_box = selite_font.render(str(float(vol_lvl)), True, 'White')
 
 
@@ -90,7 +91,7 @@ while game_loop:
     elif state_options:
         screen.fill('Black')
         screen.blit(options_img, (0,0))
-        screen.blit(control_box, (922,132))
+        #screen.blit(control_box, (922,132))
 
         if button_back.draw(screen):
             state_options = False
