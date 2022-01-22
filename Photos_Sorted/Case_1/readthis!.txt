@@ -1,0 +1,2 @@
+All images are properly sized and have the coords written in brackets.
+The only objects in case one are in Scene 2
