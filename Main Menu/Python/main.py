@@ -75,10 +75,16 @@ while game_loop:
         if button_back.draw(screen):
             state_start = False
         if button_case1.draw(screen):
+            #Uncomment below line to open a python file
+            #exec(open("*Insert file path*").read())
             print("Hello1")
         if button_case2.draw(screen):
+            #Uncomment below line to open a python file
+            #exec(open("*Insert file path*").read())
             print("Hello2")
         if button_case3.draw(screen):
+            #Uncomment below line to open a python file
+            #exec(open("*Insert file path*").read())
             print("Hello3")
     
     elif state_options:
@@ -110,7 +116,6 @@ while game_loop:
         
         pygame.time.delay(0)
         if button_start.draw(screen):
-        #exec(open("C:\\Users\Arin\Desktop\Discrepancy-main\Python Code\GamePlay (2).py").read())
             state_start= True
 
         if button_menu.draw(screen):
