@@ -273,6 +273,11 @@ def openlog():
       b1=evi('DeidMann.png','The Victim:\nThey seem to have been hit hard by something.',False, '(Well... a car accident can lead to head injury. Nothing odd here...)')
       b2=evi('BloodyWrench.png','Old Wrench:\nIt\'s smeared with blood.',True, '(Hm! Why should this have blood if it was a car accident? I think we have a lead.)')
       b3=evi('BurningCar.png','Burning Car:\nPresumably caught on fire after crashing\ninto the tree.',False, 'This is probably the last thing I should show this man...')
+      '''b3=evi('BurningCar.png','Burning Car:\nPresumably caught on fire after crashing\ninto the tree.',False, 'This is probably the last thing I should show this man...')
+      b3=evi('BurningCar.png','Burning Car:\nPresumably caught on fire after crashing\ninto the tree.',False, 'This is probably the last thing I should show this man...')
+      b3=evi('BurningCar.png','Burning Car:\nPresumably caught on fire after crashing\ninto the tree.',False, 'This is probably the last thing I should show this man...')
+      b3=evi('BurningCar.png','Burning Car:\nPresumably caught on fire after crashing\ninto the tree.',False, 'This is probably the last thing I should show this man...')
+'''
    return
 CaseButton['command']=openlog
 GameWindow.mainloop()
