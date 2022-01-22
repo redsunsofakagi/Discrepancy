@@ -13,10 +13,6 @@ SceneImage=PhotoImage(file="Scene1.png")
 TextFrame=PhotoImage(file="textframe.png")
 ObjectiveFrame=PhotoImage(file='ObjectiveFrame.png')
 
-Obj1=PhotoImage(file='DeidMann.png') #I like to think I'm funny but this is stolen from Ace Attorney
-Obj2=PhotoImage(file='BurningCar.png')
-Obj3=PhotoImage(file='BloodyWrench.png')
-
 tutorial_file = open(r"MainTutorial.txt" , 'r')
 tutorial_dialogue=tutorial_file.read() #Text file stores content in a dialogue format. This is read as string.
 tutorial_list=tutorial_dialogue.split('\n\n') #Splits on spacing between lines
@@ -39,82 +35,87 @@ for i in range(len(event_list)):
 
     
 
-SceneScreen= Canvas(GameWindow, width=600, height=500)
+SceneScreen= Canvas(GameWindow, width=600, height=500, bg='black')
 SceneScreen.create_image(300,200,image=SceneImage)
 SceneScreen.create_image(300,400,image=TextFrame) 
 SceneScreen.create_image(300,10,image=ObjectiveFrame)
-SceneScreen.create_image(310,200,image=Obj1, tags="Body") #These are creating a background image on which cickable images are superimposed. Once clicked, the upper image is removed but the lower one remains. This was the only way I could make it work without removing the whole image.
-SceneScreen.create_image(510,100,image=Obj2, tags="Car")
-#SceneScreen.create_image(210,250,image=Obj3, tags="Wrench") #I have tagged this so that no lower image is generated for the wrench. This creates the impression that the wrench as been picked up by the protagonist.
-SceneScreen.pack()
+
+countobj=1
+class Obj:
+    def __init__(self, img, x,y):
+        self.img = PhotoImage(file=img)
+        self.x = x
+        self.y = y
+        
+    def create(self):
+        SceneScreen.create_image(self.x, self.y, image=self.img)
+        SceneScreen.pack()
+
+    def active(self, n):
+        def hovertrueobj():
+            if TextBox.instate(['disabled'])==True and LineButton.instate(['disabled'])==True:
+                ObjectiveBar['text']='[Examine]'
+                
+        def hoverfalseobj():
+            if TextBox.instate(['disabled'])==True and LineButton.instate(['disabled'])==True:
+                ObjectiveBar['text']=''
+        
+        def clicktrueobj(n, Obj_id):
+            if TextBox.instate(['disabled'])==True and LineButton.instate(['disabled'])==True:
+                global countobj
+                SceneScreen.delete(Obj_id)
+                SceneScreen.pack()
+                if countobj<(len(l4)):
+                    str1=l4[n]
+                    SpeakBox['text']=l3[n]
+                    TextBox['text']=''
+                    for j in str1:
+                        SceneScreen['state']='disabled'
+                        ObjectiveBar['text']='[Read]'
+                        TextBox['text']+=j
+                        TextBox.update()
+                        TextBox.pack(side='left')
+                        SceneScreen.create_window(300,400, window=TextBox)
+                        SceneScreen.update()
+                        SceneScreen.pack(side='bottom')
+                        time.sleep(0.03)
+                    SceneScreen['state']='normal'
+                elif countobj==(len(l4)):
+                    str1=l4[n]
+                    SpeakBox['text']=l3[n]
+                    TextBox['text']=''
+                    for j in str1:
+                        SceneScreen['state']='disabled'
+                        ObjectiveBar['text']='[Read]'
+                        TextBox['text']+=j
+                        TextBox.update()
+                        TextBox.pack(side='left')
+                        SceneScreen.create_window(300,400, window=TextBox)
+                        SceneScreen.update()
+                        SceneScreen.pack(side='bottom')
+                        time.sleep(0.03)
+                    SceneScreen['state']='normal'
+                    LineButton['state']='active'
+                    TextBox['state']='active'
+                countobj+=1
+        Obj_id = SceneScreen.create_image(self.x,self.y, image=self.img)
+        SceneScreen.tag_bind(Obj_id, "<Enter>", lambda p: hovertrueobj())
+        SceneScreen.tag_bind(Obj_id, "<Leave>", lambda p: hoverfalseobj())
+        SceneScreen.tag_bind(Obj_id, "<Button-1>", lambda p: clicktrueobj(n,Obj_id))
+        SceneScreen.pack(side='bottom')
+
+Obj1=Obj("DeidMann.png", 310, 200)
+Obj1.create()
+Obj1.active(0)
+Obj2=Obj("BurningCar.png", 510, 100)
+Obj2.create()
+Obj2.active(1)
+Obj3=Obj("BloodyWrench.png", 210, 250)
+#Obj3.create()
+Obj3.active(2)
 
 LineButton=ttk.Button(SceneScreen, text='     >     ')
 ObjectiveBar = Label(SceneScreen, text='', font=GameFont, foreground='white', background='black', wraplength=200)
-
-def hovertrue(): #If the cursor moves over an interactable object, its text changes.
-    if TextBox.instate(['disabled'])==True:
-        ObjectiveBar['text']='[Examine]'
-
-def hoverfalse(): #And vice-versa
-    if TextBox.instate(['disabled'])==True:
-        ObjectiveBar['text']=''
-
-count=1
-def clicktrue(n, Obj_id): #If an interactable object is clicked, dialogue begins in the text box.
-    global count
-    SceneScreen.delete(Obj_id)
-    SceneScreen.pack()
-    if TextBox.instate(['disabled'])==True:
-        if count<(len(l4)):
-            str1=l4[n]
-            SpeakBox['text']=l3[n]
-            TextBox['text']=''
-            for j in str1:
-                SceneScreen['state']='disabled'
-                ObjectiveBar['text']='[Read]'
-                TextBox['text']+=j
-                TextBox.update()
-                TextBox.pack(side='left')
-                SceneScreen.create_window(300,400, window=TextBox)
-                SceneScreen.update()
-                SceneScreen.pack(side='bottom')
-                time.sleep(0.03)
-            SceneScreen['state']='normal'
-        elif count==(len(l4)):
-            str1=l4[n]
-            SpeakBox['text']=l3[n]
-            TextBox['text']=''
-            for j in str1:
-                SceneScreen['state']='disabled'
-                ObjectiveBar['text']='[Read]'
-                TextBox['text']+=j
-                TextBox.update()
-                TextBox.pack(side='left')
-                SceneScreen.create_window(300,400, window=TextBox)
-                SceneScreen.update()
-                SceneScreen.pack(side='bottom')
-                time.sleep(0.04)
-            SceneScreen['state']='normal'
-            LineButton['state']='active'
-            TextBox['state']='active'
-    count+=1
-            
-Obj1_id = SceneScreen.create_image(310,200,image=Obj1, tags="Body")
-SceneScreen.tag_bind(Obj1_id, "<Enter>", lambda p: hovertrue())
-SceneScreen.tag_bind(Obj1_id, "<Leave>", lambda p: hoverfalse())
-SceneScreen.tag_bind(Obj1_id, "<Button-1>", lambda p: clicktrue(0,Obj1_id))
-
-Obj2_id = SceneScreen.create_image(510,100,image=Obj2, tags="Car")
-SceneScreen.tag_bind(Obj2_id, "<Enter>", lambda p: hovertrue())
-SceneScreen.tag_bind(Obj2_id, "<Leave>", lambda p: hoverfalse())
-SceneScreen.tag_bind(Obj2_id, "<Button-1>", lambda p: clicktrue(1,Obj2_id))
-
-Obj3_id = SceneScreen.create_image(210,250,image=Obj3, tags="Wrench")
-SceneScreen.tag_bind(Obj3_id, "<Enter>", lambda p: hovertrue())
-SceneScreen.tag_bind(Obj3_id, "<Leave>", lambda p: hoverfalse())
-SceneScreen.tag_bind(Obj3_id, "<Button-1>", lambda p: clicktrue(2,Obj3_id))
-
-SceneScreen.pack(side='bottom')
 
 ObjectiveBar.pack(side='bottom')
 SceneScreen.create_window(300, 20, window=ObjectiveBar)
@@ -146,6 +147,7 @@ def next_line(): #For normal dialogue. To proceed, the button 'LineButton' is cl
                 TextBox['state']='disabled'
                 LineButton['state']='disabled'
                 break
+            SceneScreen['state']='disabled'
             ObjectiveBar['text']='[Read]'
             LineButton['state']='disabled'
             TextBox['text']+=j
@@ -157,6 +159,7 @@ def next_line(): #For normal dialogue. To proceed, the button 'LineButton' is cl
             time.sleep(0.03)
         else:
             LineButton['state']='active'
+            SceneScreen['state']='normal'
 
 LineButton["command"]=next_line
 

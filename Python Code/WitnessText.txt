@@ -1,0 +1,11 @@
+0Protagonist: 0Good evening sir. Are you aware of what happened here?
+
+0Witness: 0Oh! Oh, are you a detective? Please, please hear me out!
+
+0Protagonist: 0...Yes sir, that is why I asked. Could you tell me what transpired here?
+
+0Witness: 0Yes, Yes! That car, it's my car. He- he was driving it, and, and...!
+
+0Protagonist: 0Sir... I must ask you to calm down. You must answer some questions for me.
+
+0Witness: 0Alright...

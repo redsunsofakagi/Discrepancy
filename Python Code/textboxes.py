@@ -7,7 +7,7 @@ textbox.geometry('700x130-288-70')
 
 textbox.title('')
 
-text_file = open(r"C:\Users\tin2b\Documents\Homework\CompSci\TextCheck.txt" , 'r')
+text_file = open(r"TextCheck.txt" , 'r')
 dialogue=text_file.read()
 
 
