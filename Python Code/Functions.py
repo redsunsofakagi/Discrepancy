@@ -57,9 +57,14 @@ class setup:
                     LineButton['state']='disabled'
                     break
                  elif str1[0]=='$':
+                    e=int(str1[-1])
                     TextBox['state']='disabled'
                     LineButton['state']='disabled'
-                    openlog()
+                    break
+                 elif str1[0]=='%':
+                    o=int(str1[-1])
+                    TextBox['state']='disabled'
+                    LineButton['state']='disabled'
                     break
                  LineButton['state']='disabled'
                  TextBox['text']+=j
@@ -85,7 +90,7 @@ class setup:
             l2.append(tup1[-1])
         #global l1, l2
 
-    def invfile(textfile):
+    def objfile(textfile):
         tutorial_file= open(textfile, 'r')
         tutorial_dialogue=tutorial_file.read()
         tutorial_list=tutorial_dialogue.split('\n\n')
@@ -97,7 +102,7 @@ class setup:
             l4.append(tup1[-1])
         #global l3, l4
 
-    def evifile(textfile):
+    def witfile(textfile):
         tutorial_file= open(textfile, 'r')
         tutorial_dialogue=tutorial_file.read()
         tutorial_list=tutorial_dialogue.split('\n\n')
@@ -108,6 +113,28 @@ class setup:
             l5.append(tup1[0])
             l6.append(tup1[-1])
         #global l5, l6
+
+    def evifile(textfile):
+        tutorial_file= open(textfile, 'r')
+        tutorial_dialogue=tutorial_file.read()
+        tutorial_list=tutorial_dialogue.split('\n\n')
+        l7=[]
+        l8=[]
+        for i in range(len(tutorial_list)):
+            tup1=tutorial_list[i].partition(': ')
+            l7.append(tup1[0])
+            l8.append(tup1[-1])
+
+    def optfile(textfile):
+        tutorial_file= open(textfile, 'r')
+        tutorial_dialogue=tutorial_file.read()
+        tutorial_list=tutorial_dialogue.split('\n\n')
+        l9=[]
+        l10=[]
+        for i in range(len(tutorial_list)):
+            tup1=tutorial_list[i].partition(': ')
+            l9.append(tup1[0])
+            l10.append(tup1[-1])
 
 countobj=0
 class Obj:
@@ -133,7 +160,7 @@ class Obj:
         def clicktrueobj(n, Obj_id):
             if TextBox.instate(['disabled'])==True and LineButton.instate(['disabled'])==True:
                 global l3, l4
-                global countobj
+                global countobj, c
                 SceneScreen.delete(Obj_id)
                 SceneScreen.pack()
                 if countobj<c:
@@ -168,7 +195,6 @@ class Obj:
                     SceneScreen['state']='normal'
                     LineButton['state']='active'
                     TextBox['state']='active'
-                else:
                     countobj=-1
                 countobj+=1
         Obj_id = SceneScreen.create_image(self.x,self.y, image=self.img)
@@ -200,7 +226,7 @@ class Wit:
         def clicktruewit(n, Obj_id):
             if TextBox.instate(['disabled'])==True and LineButton.instate(['disabled'])==True:
                 global l5, l6
-                global countwit
+                global countwit, w
                 SceneScreen.delete(Obj_id)
                 SceneScreen.pack()
                 if countwit<w:
@@ -235,7 +261,6 @@ class Wit:
                     SceneScreen['state']='normal'
                     LineButton['state']='active'
                     TextBox['state']='active'
-                else:
                     countwit=-1
                 countwit+=1
         Obj_id = SceneScreen.create_image(self.x,self.y, image=self.img)
@@ -244,7 +269,7 @@ class Wit:
         SceneScreen.tag_bind(Obj_id, "<Button-1>", lambda p: clicktrueobj(n,Obj_id))
         SceneScreen.pack(side='bottom')
 
-def openlog():
+'''def openlog():
    if TextBox.instate(['disabled'])==True and LineButton.instate(['disabled'])==True
       menu=Toplevel(GameWindow)
       menu.title('Case Log')
@@ -319,10 +344,137 @@ class evi:
       b1=evi('DeidMann.png','The Victim:\nThey seem to have been hit hard by something.',False, '(Well... a car accident can lead to head injury. Nothing odd here...)')
       b2=evi('BloodyWrench.png','Old Wrench:\nIt\'s smeared with blood.',True, '(Hm! Why should this have blood if it was a car accident? I think we have a lead.)')
       b3=evi('BurningCar.png','Burning Car:\nPresumably caught on fire after crashing\ninto the tree.',False, 'This is probably the last thing I should show this man...')
-      '''b3=evi('BurningCar.png','Burning Car:\nPresumably caught on fire after crashing\ninto the tree.',False, 'This is probably the last thing I should show this man...')
+      b3=evi('BurningCar.png','Burning Car:\nPresumably caught on fire after crashing\ninto the tree.',False, 'This is probably the last thing I should show this man...')
       b3=evi('BurningCar.png','Burning Car:\nPresumably caught on fire after crashing\ninto the tree.',False, 'This is probably the last thing I should show this man...')
       b3=evi('BurningCar.png','Burning Car:\nPresumably caught on fire after crashing\ninto the tree.',False, 'This is probably the last thing I should show this man...')
       b3=evi('BurningCar.png','Burning Car:\nPresumably caught on fire after crashing\ninto the tree.',False, 'This is probably the last thing I should show this man...')
 
    return
 CaseButton['command']=openlog'''
+
+countevi=0
+class Evi:
+    def __init__(self, img, check=None):
+        self.img=PhotoImage(file=img)
+        self.check=check
+        if TextBox.instate(['disabled'])==True and LineButton.instate(['disabled'])==True:
+          menu=Toplevel(GameWindow)
+          menu.title('Case Log')
+          menu.geometry('400x230')
+          menu.grab_set()
+          def disable():
+              pass
+          menu.protocol("WM_DELETE_WINDOW", disable)
+          main_frame=Frame(menu)
+          main_frame.pack(fill=BOTH, expand=1)
+          evicanvas=Canvas(main_frame)
+          evicanvas.pack(side=LEFT, fill=BOTH, expand=1)
+          scroll=ttk.Scrollbar(main_frame, orient=VERTICAL, command=evicanvas.yview)
+          scroll.pack(side=RIGHT, fill=Y, expand=False)
+          evicanvas.configure(yscrollcommand=scroll.set)
+          evicanvas.bind('<Configure>', lambda e: evicanvas.configure(scrollregion=evicanvas.bbox('all')))
+          second_frame=Frame(evicanvas)
+          evicanvas.create_window((0,0), window=second_frame, anchor='nw')
+          CaseText=ttk.Label(second_frame, text='', font=GameFont, wraplength=300)
+          hover=Balloon(menu)
+    def active(self, n):
+          global l7, l8, countevi,e
+          if countevi<e:
+              str1= l8[n]
+              b=Button(second_frame, height=70, width=70)
+              b['image']=self.img
+              hover.bind_widget(b, balloonmsg=l7[n])
+              CaseText.pack(side=RIGHT)
+              b.pack(side='top')
+              def click():
+                  if self.check:
+                      CaseText['text']=''
+                      for j in str1:
+                         for k in second_frame.winfo_children():
+                            k.configure(state='disable')
+                            if isinstance(k, Button):
+                               k.pack(side='top')
+                            elif isinstance(k, Label):
+                               k.pack(side=RIGHT)
+                         CaseText['text']+=j
+                         CaseText.update()
+                         time.sleep(0.03)
+                      else:
+                         time.sleep(1)
+                         menu.grab_release()
+                         menu.destroy()
+                         LineButton['state']='active'
+                         TextBox['state']='active'
+                   elif self.check==None:
+                      pass
+                   else:
+                      CaseText['text']=''
+                      for j in str1:
+                         for k in second_frame.winfo_children():
+                            k.configure(state='disable')
+                            if isinstance(k, Button):
+                               k.pack(side='top')
+                            elif isinstance(k, Label):
+                               k.pack(side=RIGHT)
+                         CaseText['text']+=j
+                         CaseText.update()
+                         CaseText.pack(side=RIGHT)
+                         time.sleep(0.03)
+                      else:
+                         for k in second_frame.winfo_children():
+                            k.configure(state='active')
+                            if isinstance(k, Button):
+                               k.pack(side='top')
+                            elif isinstance(k, Label):
+                               k.pack(side=RIGHT)
+                b['command']=click
+          elif countevi==e:
+              str1= l8[n]
+              b=Button(second_frame, height=70, width=70)
+              b['image']=self.img
+              hover.bind_widget(b, balloonmsg=l7[n])
+              CaseText.pack(side=RIGHT)
+              b.pack(side='top')
+              def click():
+                  if self.check:
+                      CaseText['text']=''
+                      for j in str1:
+                         for k in second_frame.winfo_children():
+                            k.configure(state='disable')
+                            if isinstance(k, Button):
+                               k.pack(side='top')
+                            elif isinstance(k, Label):
+                               k.pack(side=RIGHT)
+                         CaseText['text']+=j
+                         CaseText.update()
+                         time.sleep(0.03)
+                      else:
+                         time.sleep(1)
+                         menu.grab_release()
+                         menu.destroy()
+                         LineButton['state']='active'
+                         TextBox['state']='active'
+                   elif self.check==None:
+                      pass
+                   else:
+                      CaseText['text']=''
+                      for j in str1:
+                         for k in second_frame.winfo_children():
+                            k.configure(state='disable')
+                            if isinstance(k, Button):
+                               k.pack(side='top')
+                            elif isinstance(k, Label):
+                               k.pack(side=RIGHT)
+                         CaseText['text']+=j
+                         CaseText.update()
+                         CaseText.pack(side=RIGHT)
+                         time.sleep(0.03)
+                      else:
+                         for k in second_frame.winfo_children():
+                            k.configure(state='active')
+                            if isinstance(k, Button):
+                               k.pack(side='top')
+                            elif isinstance(k, Label):
+                               k.pack(side=RIGHT)
+              countevi=-1
+          countevi+=1

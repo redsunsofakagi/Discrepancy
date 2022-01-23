@@ -1,0 +1,23 @@
+[Noose\nA scruffily tied rope. Bears signs of a struggle.]: [The noose is probably the last thing I should show the kid…]
+
+[Vase\nA cracked vase. Found it lying on the floor pointing to the backdoor.]: [Selection: Probably the cracking noise Maria heard… not out of the ordinary.]
+
+[Backdoor\nDescription: A rusty metal door. It was unlocked when I found it.]: [Selection: Exactly. Maria said she couldn’t enter the building through the backdoor as it was locked from the inside. The autopsy team didn’t leave through it either. So how did it get locked from the outside?]
+
+[Noose\nA scruffily tied rope. Bears signs of a struggle.]: [Selection: Where did this rope come from? Maria might know something.]
+
+[Vase\nA cracked vase. Found it lying on the floor pointing to the backdoor.]: [Selection: This is important but… I don’t know what to ask Maria about it. ]
+
+[Backdoor\nA rusty metal door. It was unlocked when I found it.]: [Selection: This is important but… I don’t know what to ask Maria about it.]
+
+[Vase\nA cracked vase. Found it lying on the floor pointing to the backdoor.]: [Selection: This is important but… what does it have to do with fingerprints?]
+
+[Backdoor\nA rusty metal door. It was unlocked when I found it.]: [Selection: This is important but… I don’t know what to tell Locke about it.]
+
+[Rope\nUsed to presumably strangle the victim. Was attached to the main doorbell.]: [Selection: A rope that was attached to the main doorbell, and used by many, many people.]
+
+[Vase\nA cracked vase. Found it lying on the floor pointing to the backdoor.]: [Selection: This is important but… what does it have to do with fingerprints?]
+
+[Backdoor:\nA rusty metal door. May have been used by the killer to escape...]: [Selection: A rarely used backdoor, huh? The handle might contain some useful fingerprints.]
+
+[Rope\nUsed to presumably strangle the victim. Was attached to the main doorbell.]: [Selection: I just showed this to Locke...]
