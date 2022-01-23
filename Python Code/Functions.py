@@ -69,14 +69,20 @@ class setup:
                     image = Image.open(IMAGE_PATH).convert("RGBA")
                     image_tk = ImageTk.PhotoImage(image)
                     label = tkinter.Label(SceneScreen, image=image_tk, bg="black")
+                    SceneScreen.create_window(10,10, window=label)
+                    SceneScreen.pack()
                     label.pack()
                     for i in range(255, 0, -5):
                         image.putalpha(i)
                         image_tk = ImageTk.PhotoImage(image)
                         label.configure(image=image_tk)
                         label.update()
+                        SceneScreen.update()
                         label.pack(side='top')
+                        SceneScreen.pack()
                         time.sleep(0.01)
+                    else:
+                        SceneScreen.delete(label)
                     break
                  LineButton['state']='disabled'
                  TextBox['text']+=j
