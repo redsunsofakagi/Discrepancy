@@ -5,11 +5,11 @@ class setup:
         GameWindow= Tk()
         GameWindow.resizable(width=False, height=False)
         GameWindow.title(title)
-        GameWindow.geometry('600x600')
+        GameWindow.geometry('600x650')
         
         GameFont = font.Font(family='Courier', name='GameFont', size=15, weight='bold')
         MiniFont = font.Font(family='Courier', name='MiniFont', size=10, weight='bold')
-        SceneScreen= Canvas(GameWindow, width=600, height=600)
+        SceneScreen= Canvas(GameWindow, width=600, height=650)
         
         TextFrame=PhotoImage(file="textframe.png")
         SceneScreen.create_image(300,400,image=TextFrame)
@@ -60,9 +60,23 @@ class setup:
                     TextBox['state']='disabled'
                     LineButton['state']='disabled'
                     break
-                 elif str1=='[fadein]':
+                 elif str1[0]=='~':
                     TextBox['state']='disabled'
                     LineButton['state']='disabled'
+                    img=PhotoImage(str1[1:])
+                    SceneScreen.create_image(300,150, image=img)
+                    IMAGE_PATH = "fader.png"
+                    image = Image.open(IMAGE_PATH).convert("RGBA")
+                    image_tk = ImageTk.PhotoImage(image)
+                    label = tkinter.Label(SceneScreen, image=image_tk, bg="black")
+                    label.pack()
+                    for i in range(255, 0, -5):
+                        image.putalpha(i)
+                        image_tk = ImageTk.PhotoImage(image)
+                        label.configure(image=image_tk)
+                        label.update()
+                        label.pack(side='top')
+                        time.sleep(0.01)
                     break
                  LineButton['state']='disabled'
                  TextBox['text']+=j
