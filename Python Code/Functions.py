@@ -5,11 +5,11 @@ class setup:
         GameWindow= Tk()
         GameWindow.resizable(width=False, height=False)
         GameWindow.title(title)
-        GameWindow.geometry('600x500')
+        GameWindow.geometry('600x600')
         
         GameFont = font.Font(family='Courier', name='GameFont', size=15, weight='bold')
         MiniFont = font.Font(family='Courier', name='MiniFont', size=10, weight='bold')
-        SceneScreen= Canvas(GameWindow, width=600, height=500)
+        SceneScreen= Canvas(GameWindow, width=600, height=600)
         
         TextFrame=PhotoImage(file="textframe.png")
         SceneScreen.create_image(300,400,image=TextFrame)
@@ -26,12 +26,6 @@ class setup:
         TextBox = ttk.Label(SceneScreen, text='', font=GameFont, foreground='white', background='black', wraplength=525)
         TextBox.pack(side='left')
         SceneScreen.create_window(300,400, window=TextBox)
-
-        '''CaseButton=Button(SceneScreen, height=80, width=80)
-        x=PhotoImage(file='casenotes.png')
-        CaseButton['image']=x
-        SceneScreen.create_window(555,255, window=CaseButton)
-        SceneScreen.pack(side='bottom')'''
 
         k=-1
         m=-1
@@ -63,6 +57,10 @@ class setup:
                     break
                  elif str1[0]=='%':
                     o=int(str1[-1])
+                    TextBox['state']='disabled'
+                    LineButton['state']='disabled'
+                    break
+                 elif str1=='[fadein]':
                     TextBox['state']='disabled'
                     LineButton['state']='disabled'
                     break
@@ -202,7 +200,7 @@ class Obj:
         SceneScreen.tag_bind(Obj_id, "<Leave>", lambda p: hoverfalseobj())
         SceneScreen.tag_bind(Obj_id, "<Button-1>", lambda p: clicktrueobj(n,Obj_id))
         SceneScreen.pack(side='bottom')
-
+        
 countwit=0
 class Wit:
     def __init__(self, img, x,y):
