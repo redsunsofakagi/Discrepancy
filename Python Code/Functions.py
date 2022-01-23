@@ -269,89 +269,6 @@ class Wit:
         SceneScreen.tag_bind(Obj_id, "<Button-1>", lambda p: clicktrueobj(n,Obj_id))
         SceneScreen.pack(side='bottom')
 
-'''def openlog():
-   if TextBox.instate(['disabled'])==True and LineButton.instate(['disabled'])==True
-      menu=Toplevel(GameWindow)
-      menu.title('Case Log')
-      menu.geometry('400x230')
-      menu.grab_set()
-      main_frame=Frame(menu)
-      main_frame.pack(fill=BOTH, expand=1)
-      evicanvas=Canvas(main_frame)
-      evicanvas.pack(side=LEFT, fill=BOTH, expand=1)
-      scroll=ttk.Scrollbar(main_frame, orient=VERTICAL, command=evicanvas.yview)
-      scroll.pack(side=RIGHT, fill=Y, expand=False)
-      evicanvas.configure(yscrollcommand=scroll.set)
-      evicanvas.bind('<Configure>', lambda e: evicanvas.configure(scrollregion=evicanvas.bbox('all')))
-      second_frame=Frame(evicanvas)
-      evicanvas.create_window((0,0), window=second_frame, anchor='nw')
-      CaseText=ttk.Label(second_frame, text='', font=GameFont, wraplength=300)
-      hover=Balloon(menu)
-
-class evi:
- def __init__(self, img, desc, check=None, dialogue=None):
-    self.img=PhotoImage(file=img)
-    self.desc=desc
-    self.check=check
-    self.dialogue=dialogue
-    b=Button(second_frame, height=70, width=70)
-    b['image']=self.img
-    hover.bind_widget(b, balloonmsg=self.desc)
-    CaseText.pack(side=RIGHT)
-    b.pack(side='top')
-    def click():
-       if self.check:
-          CaseText['text']=''
-          for j in self.dialogue:
-             for k in second_frame.winfo_children():
-                k.configure(state='disable')
-                if isinstance(k, Button):
-                   k.pack(side='top')
-                elif isinstance(k, Label):
-                   k.pack(side=RIGHT)
-             CaseText['text']+=j
-             CaseText.update()
-             time.sleep(0.03)
-          else:
-             time.sleep(1)
-             menu.grab_release()
-             menu.destroy()
-             LineButton['state']='active'
-             TextBox['state']='active'
-       elif self.check==None:
-          pass
-       else:
-          CaseText['text']=''
-          for j in self.dialogue:
-             for k in second_frame.winfo_children():
-                k.configure(state='disable')
-                if isinstance(k, Button):
-                   k.pack(side='top')
-                elif isinstance(k, Label):
-                   k.pack(side=RIGHT)
-             CaseText['text']+=j
-             CaseText.update()
-             CaseText.pack(side=RIGHT)
-             time.sleep(0.03)
-          else:
-             for k in second_frame.winfo_children():
-                k.configure(state='active')
-                if isinstance(k, Button):
-                   k.pack(side='top')
-                elif isinstance(k, Label):
-                   k.pack(side=RIGHT)
-    b['command']=click
-      b1=evi('DeidMann.png','The Victim:\nThey seem to have been hit hard by something.',False, '(Well... a car accident can lead to head injury. Nothing odd here...)')
-      b2=evi('BloodyWrench.png','Old Wrench:\nIt\'s smeared with blood.',True, '(Hm! Why should this have blood if it was a car accident? I think we have a lead.)')
-      b3=evi('BurningCar.png','Burning Car:\nPresumably caught on fire after crashing\ninto the tree.',False, 'This is probably the last thing I should show this man...')
-      b3=evi('BurningCar.png','Burning Car:\nPresumably caught on fire after crashing\ninto the tree.',False, 'This is probably the last thing I should show this man...')
-      b3=evi('BurningCar.png','Burning Car:\nPresumably caught on fire after crashing\ninto the tree.',False, 'This is probably the last thing I should show this man...')
-      b3=evi('BurningCar.png','Burning Car:\nPresumably caught on fire after crashing\ninto the tree.',False, 'This is probably the last thing I should show this man...')
-      b3=evi('BurningCar.png','Burning Car:\nPresumably caught on fire after crashing\ninto the tree.',False, 'This is probably the last thing I should show this man...')
-
-   return
-CaseButton['command']=openlog'''
-
 countevi=0
 class Evi:
     def __init__(self, img, check=None):
@@ -476,5 +393,180 @@ class Evi:
                                k.pack(side='top')
                             elif isinstance(k, Label):
                                k.pack(side=RIGHT)
+              b['command']=click                 
               countevi=-1
           countevi+=1
+
+countopt=0
+class Opt:
+    def __init__(self, check=None):
+        self.check=check
+        if TextBox.instate(['disabled'])==True and LineButton.instate(['disabled'])==True:
+          menu=Toplevel(GameWindow)
+          menu.title('Case Log')
+          menu.geometry('400x230')
+          menu.grab_set()
+          def disable():
+              pass
+          menu.protocol("WM_DELETE_WINDOW", disable)
+          main_frame=Frame(menu)
+          main_frame.pack(fill=BOTH, expand=1)
+          evicanvas=Canvas(main_frame)
+          evicanvas.pack(side=LEFT, fill=BOTH, expand=1)
+          scroll=ttk.Scrollbar(main_frame, orient=VERTICAL, command=evicanvas.yview)
+          scroll.pack(side=RIGHT, fill=Y, expand=False)
+          evicanvas.configure(yscrollcommand=scroll.set)
+          evicanvas.bind('<Configure>', lambda e: evicanvas.configure(scrollregion=evicanvas.bbox('all')))
+          second_frame=Frame(evicanvas)
+          evicanvas.create_window((0,0), window=second_frame, anchor='nw')
+          #CaseText=ttk.Label(second_frame, text='', font=GameFont, wraplength=300)
+          #hover=Balloon(menu)
+    def active(self, n):
+          global l9, l10, countopt,o
+          if countopt<o:
+              str1= l10[n]
+              b=Button(second_frame, width=100)
+              b['text']=str1
+              #hover.bind_widget(b, balloonmsg=l7[n])
+              #CaseText.pack(side=RIGHT)
+              b.pack(side='top')
+              def click():
+                  if self.check:
+                      '''CaseText['text']=''
+                      for j in str1:
+                         for k in second_frame.winfo_children():
+                            k.configure(state='disable')
+                            if isinstance(k, Button):
+                               k.pack(side='top')
+                            elif isinstance(k, Label):
+                               k.pack(side=RIGHT)
+                         CaseText['text']+=j
+                         CaseText.update()
+                         time.sleep(0.03)
+                      else:'''
+                      time.sleep(1)
+                      menu.grab_release()
+                      menu.destroy()
+                      LineButton['state']='active'
+                      TextBox['state']='active'
+                   elif self.check==None:
+                      pass
+                   else:
+                      '''CaseText['text']=''
+                      for j in str1:
+                         for k in second_frame.winfo_children():
+                            k.configure(state='disable')
+                            if isinstance(k, Button):
+                               k.pack(side='top')
+                            elif isinstance(k, Label):
+                               k.pack(side=RIGHT)
+                         CaseText['text']+=j
+                         CaseText.update()
+                         CaseText.pack(side=RIGHT)
+                         time.sleep(0.03)
+                      else:
+                         for k in second_frame.winfo_children():
+                            k.configure(state='active')
+                            if isinstance(k, Button):
+                               k.pack(side='top')
+                            elif isinstance(k, Label):
+                               k.pack(side=RIGHT)'''
+                      pass
+                b['command']=click
+          elif countopt==o:
+              str1= l10[n]
+              b=Button(second_frame, width=100)
+              b['text']=str1
+              #hover.bind_widget(b, balloonmsg=l7[n])
+              #CaseText.pack(side=RIGHT)
+              b.pack(side='top')
+              def click():
+                  if self.check:
+                      '''CaseText['text']=''
+                      for j in str1:
+                         for k in second_frame.winfo_children():
+                            k.configure(state='disable')
+                            if isinstance(k, Button):
+                               k.pack(side='top')
+                            elif isinstance(k, Label):
+                               k.pack(side=RIGHT)
+                         CaseText['text']+=j
+                         CaseText.update()
+                         time.sleep(0.03)
+                      else:'''
+                      time.sleep(1)
+                      menu.grab_release()
+                      menu.destroy()
+                      LineButton['state']='active'
+                      TextBox['state']='active'
+                   elif self.check==None:
+                      pass
+                   else:
+                      '''CaseText['text']=''
+                      for j in str1:
+                         for k in second_frame.winfo_children():
+                            k.configure(state='disable')
+                            if isinstance(k, Button):
+                               k.pack(side='top')
+                            elif isinstance(k, Label):
+                               k.pack(side=RIGHT)
+                         CaseText['text']+=j
+                         CaseText.update()
+                         CaseText.pack(side=RIGHT)
+                         time.sleep(0.03)
+                      else:
+                         for k in second_frame.winfo_children():
+                            k.configure(state='active')
+                            if isinstance(k, Button):
+                               k.pack(side='top')
+                            elif isinstance(k, Label):
+                               k.pack(side=RIGHT)'''
+                      pass
+              b['command']=click
+              countopt=-1
+          countopt+=1
+
+'''import time
+import threading
+
+import tkinter
+from PIL import Image, ImageTk
+
+root = tkinter.Tk()
+
+# Tested with .jpg and .png
+IMAGE_PATH = "Scene1.png"
+
+# Create a pillow image and a tkinter image. convert to RGBA to add alpha channel to image
+image = Image.open(IMAGE_PATH).convert("RGBA")
+image_tk = ImageTk.PhotoImage(image)
+
+# We'll fade to whatever the background is here (black, white, orange, etc)
+label = tkinter.Label(root, image=image_tk, bg="black")
+label.pack()
+
+def fade_image():
+    global image, image_tk, label
+    # Walk backwards through opacities (255 is opaque, 0 is transparent)
+    for i in range(255, 0, -5):
+        image.putalpha(i) # Set new alpha
+        image_tk = ImageTk.PhotoImage(image) # Cretae new image_tk
+        label.configure(image=image_tk)
+        label.update()
+        label.pack(side='top')
+        # Sleep some time to make the transition not immediate
+        time.sleep(0.01)
+    
+# Put image fading in a thread so it doesn't block our GUI
+fade_thread = threading.Thread(target=fade_image)
+tkinter.Button(root, text="Fade To Black", command=fade_thread.start).pack()
+
+for i in range(255, 0, -5):
+        image.putalpha(i) # Set new alpha
+        image_tk = ImageTk.PhotoImage(image) # Cretae new image_tk
+        label.configure(image=image_tk)
+        label.update()
+        label.pack(side='top')
+        # Sleep some time to make the transition not immediate
+        time.sleep(0.01)
+root.mainloop()'''
