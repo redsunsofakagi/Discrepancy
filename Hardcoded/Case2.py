@@ -4,14 +4,11 @@ from tkinter import font
 from tkinter import ttk
 from PIL import Image, ImageTk
 import time
-import threading
+#import threading
 import sys
 from pyglet import font
-import pygame
 import os
 main_dir = os.path.split(os.path.abspath(__file__))[0]
-pygame.init()
-vol_lvl=0.10
 tutorial_file = open("MainTutorial2.txt" , 'r')
 tutorial_dialogue=tutorial_file.read() 
 tutorial_list=tutorial_dialogue.split('\n\n')
