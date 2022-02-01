@@ -1,6 +1,6 @@
 from tkinter import *
 from tkinter.tix import *
-from tkinter import font
+#from tkinter import font
 from tkinter import ttk
 from PIL import Image, ImageTk
 import time
@@ -8,7 +8,7 @@ import time
 import sys
 from pyglet import font
 import os
-main_dir = os.path.split(os.path.abspath(__file__))[0]
+#main_dir = os.path.split(os.path.abspath(__file__))[0]
 tutorial_file = open("MainTutorial2.txt" , 'r')
 tutorial_dialogue=tutorial_file.read() 
 tutorial_list=tutorial_dialogue.split('\n\n')

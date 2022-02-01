@@ -1,15 +1,14 @@
 from tkinter import *
 from tkinter.tix import *
-from tkinter.font import Font
+#from tkinter.font import Font
 from tkinter import ttk
 from PIL import Image, ImageTk
 import time
-import threading
+#import threading
 import sys
 from pyglet import font
 import os
-import pygame
-main_dir = os.path.split(os.path.abspath(__file__))[0]
+#main_dir = os.path.split(os.path.abspath(__file__))[0]
 tutorial_file = open("MainTutorial3.txt" , 'r')
 tutorial_dialogue=tutorial_file.read() 
 tutorial_list=tutorial_dialogue.split('\n\n')
@@ -655,8 +654,8 @@ def next_line():
             LineButton['state']='disabled'
             openlog()
             plate=Evi('Plate.png','Plate:\nA single plate.','Someone had to have been waiting here... eating snacks alone. Sounds fun.', True)
-            snacks=Evi('Fish.png','Snacks:\nAn assortment of snacks. Barely touched.','Meeting snacks. They seem uneaten, so it\'s not out of place...', False)
-            mess=Evi('File Open.png','Messy Files:\nSprawled out on a table. Contains a list of people.','Hm.. if there was no one here, who arranged the files like this?', False)
+            snacks=Evi('Fish.png','Snacks:\nAn assortment of snacks. Barely touched.','Meeting snacks. They seem uneaten, so it\'s not out of place...', True)
+            mess=Evi('File Open.png','Messy Files:\nSprawled out on a table. Contains a list of people.','Hm.. if there was no one here, who arranged the files like this?', True)
             plate.active()
             snacks.active()
             mess.active()
@@ -791,6 +790,8 @@ def next_line():
             openlog()
             cover1=Evi("File Signed.png","Cover File:\nThe file the minister was looking for. Found on Charles\' desk.","These don't make sense",False)
             gloves1=Evi("Gloves.png","Gloves:\nLatex gloves. Found in Charles\' office.","Caught these on the coat rack.",True)
+            vip2=Evi('VIP Pass.png','VIP Slip:\nAllows the bearer free access to the building facilities. Only one issued.','This is useless  now...', False)
+            vip2.active()
             cover1.active()
             gloves1.active()
             break
@@ -824,7 +825,7 @@ def next_line():
             TextBox['state']='disabled'
             LineButton['state']='disabled'
             openlog()
-            cover2=Evi("File Signed.png","Cover File:\nThe file the minister was looking for. Found on Charles\' desk.","This doesn't seem right...",False)
+            cover2=Evi("File Signed.png","Cover File:\nThe file the minister was looking for. Found on Charles\' desk.","I would check it out, but.. Charles took it from me. The bureau wouldn't let me keep a copy...",False)
             mess2=Evi('File Open.png','Messy Files:\nSprawled out on a table. Contains a list of people.','This list was the second part of the file, right?', True)
             cover2.active()
             mess2.active()
@@ -937,7 +938,7 @@ def next_line():
             Locke001.create()
             Charles01=Wit("Charles-removebg-preview.png",300,250)
             Charles01.create()
-            Charles01.active("Charles","...",1)
+            Charles01.active('Jones', "When did the death of the victim occur?",1)
             Puddle01=aObj("Puddle.png",420,160)
             Puddle01.acreate()
             Puddle01.aactive("Charles","Water, spilt just below the minister\'s side of the table. There are wires next to it. Definitely a safety violation, mm?",4)
@@ -964,7 +965,7 @@ def next_line():
             Locke11.create()
             Joanne1=aWit("Joanne.png",310,250)
             Joanne1.acreate()
-            Joanne1.aactive("Joanne","...",1)
+            Joanne1.aactive("Joanne", 'The boss is.. Well, was, a bit of a perfectionist. Before leaving for today\'s meeting he asked me to "rearrange" the wiring to his taste.' ,1)
             SceneScreen.update()
             SceneScreen.pack()
             raise NoError
@@ -1095,7 +1096,7 @@ def next_line():
             Locke14.create()
             Charles14=dWit("Charles-removebg-preview.png",300,250)
             Charles14.dcreate()
-            Charles14.dactive("Charles","...",1)
+            Charles14.dactive('Jones', 'Captain. Have you seen this file before?',1)
             Puddle14=dObj("Puddle.png",420,160)
             Puddle14.dcreate()
             Puddle14.dactive("Jones",'(The puddle... I didn\'t notice it before, but it has a sweet smell. Flowers?)',1)
@@ -1269,6 +1270,21 @@ def next_line():
             Books25.ecreate()
             Hang25=eObj("Hanger James.png",510,150)
             Hang25.ecreate()
+            SceneScreen.update()
+            SceneScreen.pack()
+            raise NoError
+         elif str1=="[ENTER JAMES]":
+            del Scene25,perfume25,Books25,Hang25
+            Scene25_=Obj("Living Room.png",300,150)
+            Scene25_.create()
+            perfume25_=eObj("perfume.png",300,150)
+            perfume25_.ecreate()
+            Books25_=eObj("Books.png",183,125)
+            Books25_.ecreate()
+            Hang25_=eObj("Hanger James.png",510,150)
+            Hang25_.ecreate()
+            James25=Wit("James.png",100,250)
+            James25.create()
             SceneScreen.update()
             SceneScreen.pack()
             raise NoError
