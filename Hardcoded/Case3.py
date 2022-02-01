@@ -1272,6 +1272,21 @@ def next_line():
             SceneScreen.update()
             SceneScreen.pack()
             raise NoError
+         elif str1=="[ENTER JAMES]":
+            del Scene25,perfume25,Books25,Hang25
+            Scene25_=Obj("Living Room.png",300,150)
+            Scene25_.create()
+            perfume25_=eObj("perfume.png",300,150)
+            perfume25_.ecreate()
+            Books25_=eObj("Books.png",183,125)
+            Books25_.ecreate()
+            Hang25_=eObj("Hanger James.png",510,150)
+            Hang25_.ecreate()
+            James25=Wit("James.png",100,250)
+            James25.create()
+            SceneScreen.update()
+            SceneScreen.pack()
+            raise NoError
          LineButton['state']='disabled'
          TextBox['text']+=j
          TextBox.update()
