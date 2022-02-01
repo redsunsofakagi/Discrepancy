@@ -4,7 +4,7 @@ from tkinter.font import Font
 from tkinter import ttk
 from PIL import Image, ImageTk
 import time
-import threading
+#import threading
 import sys
 from pyglet import font
 import os
