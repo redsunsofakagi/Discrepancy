@@ -612,7 +612,7 @@ Locke: Detective!
 
 Jones: (......)
 
-Jones: (It's clear then)
+Jones: (It's clear then.)
 
 Jones: (I... may have lost my job.) 
 
@@ -903,6 +903,7 @@ Jones: (Right, this might be useful. A list of people... I should go over it.)
 Jones: ('Aava Thomson', 'Abigail Clark', 'Alex Johnson'... I don't know any of these people..)
 
 Jones: (There's multiple Alex's, Jonathan's, Ethan's and Charles' here.... None of them have our good old Captain, though. Hm...)
+
 Jones: (...!)
 
 Jones: ('Athena'...? Why is my name on here? What the hell?...Athena, Last Name Unknown...Well.. it could be ANOTHER Athena...)
