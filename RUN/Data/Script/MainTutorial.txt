@@ -1,0 +1,300 @@
+Jones: (And another one bites the dust.)
+
+Jones: (My routine is always the same..)
+
+Jones: (Wake up, go to the Bureau, see more death.)
+
+Jones: (But this one was different. It was important. The victim was the guard of The Stonewall Detention Centre.)
+
+Jones: (The death that started it all...)
+
+CRIME SCENE: [01]
+
+???: Detective! You finally made it!
+
+Jones: Yes, Locke, I did. Mind giving me the rundown on this one, kid?
+
+Jones: (This is Locke Sher. The Bureau assigns every detective a trusty beat cop for assistance, and this young kid.. somehow ended up right in that position.)
+
+Locke: Hey! You're pityingly staring at me again! I chose this job for myself, you know.
+
+Jones: Sure, kid. You gonna answer my question or not?
+
+Locke: Yes detective! Seems like it was a suicide, but we're still investigating things...
+He... that guard, he...hanged himself.
+
+Jones: (...And this is why I don't want kids ending up on the force.) Hm. Did they take away the body?
+
+Locke: Yes, they did, phew... They've left the rest of the room as it was found, though. 
+
+Jones: (...At least the room smells nice.) And who found it?
+
+Locke: Oh, that'd be that woman and her son over there. The Giovinazzis, was it? I think they're Italian.
+
+Jones: I.. don't see how that's relevant, but alright. Prep those two for questioning, I'll take a look around.
+
+INVESTIGATIO: ...
+
+Locke: Before I go, detective... You seem a little hesitant. All you have to do is hover over what you need to look at. You'll be prompted to examine it in detail.
+
+Jones: I've been in this business for way too long, kid, I know how to do that. (But... thanks for the reminder.)
+
+INVESTIGATION: [inv]
+
+Locke: Detective! The witnesses are ready. We should begin the questioning.
+
+Jones: Alright kid, give me a moment with them.
+
+Jones: (I didn't have much time to collect things... but new information is always handy. Just ask 'em the details and look through my case notes if anything feels off.)
+
+INTERROGATE: [inv]
+
+Jones: Good evening ma'am. Your name?
+
+???: ...
+
+Jones: Ma'am?
+
+???: You cannot fool me, child. A girl like you all dressed up as a.. What you call it.. Polizia? Police?  How, how could you do it? How-
+
+Jones: Not now, Ma'am. Your name-
+
+???: How, how dashing! It reminds me of 'old husband, it does. The beige coat, the black cappello... ah, meraviglioso!
+
+Jones: I- uh.. Thank you? (I think she liked my cap..) Ma'am, what might be your name?
+
+Maria: Call me Maria, Ay? Maria Giovinazzi. Ey Anttonio! Introduce yourself too.
+
+Anttonio: Hmph. Evening.
+
+Maria: Boy! Where are your manners? Is that any way to speak to la polizia? 
+
+Maria: Ja allarme, morte, e statisticamente homen, ulteriore non tradizionale. Lo giuro, da quando tuo padre se n'e andato sei diventato un moccioso marcio!
+
+Maria: Tutto quello che fai e tenere il broncio per quel tuo lavoro che fa sfilare i prigionieri come bestiame--
+
+Jones: Ms. Maria, please, relax. I just want to ask you a few questions about the incident.
+
+Maria: ...Si, si. Ask away. What do you want to know?
+
+Jones: Well, how did you two come upon the body?
+
+Maria: Ay, it was... terrifying. The guard, he's Anttonio's coworker and lives next door. They work at the detention centre, you understand? Ay, what a tragedy! Poor Benhito...
+
+Jones: Mhmm.. (So that would be the name of our victim.)
+
+Maria: I was cooking dinner for Anttonio and Benhito. Ay, these kids never learnt to cook. Anttonio had gone to the washroom when I heard a faint crashing sound. 
+
+Maria: But I kept cooking and later headed to his place to give him food.
+
+Jones: About how much time elapsed between the crashing sound and you heading to his place?
+
+Maria: Eh, about 10 minutes I'd say. I cook quick and well, Ms. Polizia! You want Risotto after this?
+
+Jones: I-No thank you. (So they encountered the body presumably 10 minutes after the suicide.)
+
+Maria: Ay, ay, alright... Well, I rang the doorbell, and there was no answer. The backdoor was also locked... I called and called, until Anttonio came asking why I was shouting.
+
+Maria: Anttonio, this kid, has no patience. Seems like he picked up a trick or two from the prisoners he guards. He took my hairpin, picked the lock and we came upon.. the body...
+
+Jones: I see. Thank you for the details, ma'am. Hey, Locke!
+
+Locke: Yes Detective!
+
+Jones: From which door did the autopsy team leave the building?
+
+Locke: Huh? The main entrance, of course. Why do you ask?
+
+Jones: Let me show you. (If my thinking is correct, then one fact does not line up with Maria's statement. I should open my case log and show them the truth!)
+
+OPEN LOG: [open1]
+
+Locke: The backdoor was locked? Yes, that's what Maria said, isn't it?
+
+Jones: You're right kid, but she said it was locked from the inside. Now... Well, go check the door yourself.
+
+Locke: Huh? ...!?
+
+Locke: It's locked from the outside!
+
+Maria: !?
+
+Maria: How dare you, Ms. Polizia! I thought you were friend! You accuse me of lying? It was locked from the inside, ay! I saw it with my eyes! I felt it with my cook's arms!
+
+Jones: Of course Maria, I never said you were lying. But there might be more to this suicide than it seems-
+
+Locke: -If you can even call it a suicide...
+
+Maria: ...?
+
+Anttonio: ..!
+
+Jones: Seems like you're getting my gist, kid.
+
+Jones: Get the autopsy report from forensics quickly. We might have a murder on our hands.
+
+... : [LEAVE_L]
+
+Jones: (Well then. I suppose we should investigate the scene again. Before Maria begins another spiel of hers...)
+
+Jones: (Let's rexamine the scene through the eyes of a murderer. What we need is a way to enter the room, kill the victim, disguise it as a suicide, and escape.)
+
+INVESTIGATION: [inv]
+
+Jones: Maria, may I ask you something?
+
+Maria: ...
+
+Jones: Ma'am..?
+
+Maria: ...Si! Si, I am here. Wh-what do you want to know.. Ms. Polizia?
+
+Jones: Ma'am... I will need you to stay calm. We don't know if it was a murder yet, and even if it were... I will take care of it. Can I count on you to trust me?
+
+Maria: ..Si. Trust, yes? I trust you, Ms. Polizia. What would you like to know?
+
+Jones: (I should show her the log.)
+
+OPEN LOG: [open2]
+
+Maria: The.. noose?
+
+Jones: Yes. More specifically, the rope used with it. Are ropes like these found anywhere in these apartments?
+
+Maria: Well... these houses use rope for ringing bell, ay? See ours?
+
+Doorbell: *Ding*
+
+Jones: ..Hm! This doorbell's rope is, in fact, torn off. If this rope was used as a false noose, then it explains...
+
+OPEN LOG: [open3]
+
+Jones: Push and pull the bell rope enough, then we just might end up with what looks like the marks of a struggle.
+
+Maria: !
+
+Jones: (That explains that... but it must mean the murderer.. was someone who lived nearby and knew about the doorbell.)
+
+Jones: One last thing, Maria. Do you and your son have an alibi?
+
+Maria: An alibi.. Well, a mailman had come to deliver letters. Bless his heart! He said the cooking smelled lovely, so I sat him down and let him have a taste! 
+
+Jones: (That poor fellow, he must have had places to be.) And what about Anttonio?
+
+Maria: Well, he had headed off to the bathroom. But I'm sure the mailman saw him too.
+
+Jones: (I'll have to check in with the mailman, but it seems like they have solid-)
+
+... : [ENTER_L]
+
+Locke: DETECTIVE!
+
+Jones: Kid! You got the autopsy?
+
+Locke: Yes detective! And... this was definitely a murder. No doubt about it. There are bruises on his neck, but they are marks.. of strangulation. 
+
+Locke: All we have to do is find the rope which was used and-
+
+Jones: I think I've found it, kid. But it's not gonna be that simple.
+
+Locke: Huh?? But we could just get it tested for fingerprints, and-
+
+Jones: (I'll have to show him.)
+
+OPEN LOG: [open4]
+
+Jones: The rope came from the doorbell, kid. Who knows how many people used it. There'll be all kinds of fingerprints on it.
+
+Locke: ...Oh. But I brought the forensics team all the way here...
+
+Jones: That's okay kid. You did good. Have 'em analyse the...
+
+OPEN LOG: [open5]
+
+Jones: ...handle of the backdoor. If we're on the right track, then the fingerprints on it should be the killer's.
+
+Locke: I'll have them on it immediately, detective.
+
+Jones: (The doorbell rope. The backdoor. Only someone who has a knowledge of this building would know how to use these. Among the witnesses, that can only mean Maria, or-)
+
+Locke: Detective! They're.. they're Anttonio's!
+
+Maria: ..??!
+
+Anttonio: Hmph. So this is what the police have come to. Hiring those who should stay in kitchens to solve crime.
+
+Jones: Sir, it seems I have a few questions to ask of you.
+
+Anttonio: I plead the fifth.
+
+Maria: Anttonio??!! What are you doing? Please, please, answer her! What were you doing at the back door?
+
+Anttonio: ....I was asked to come there alone. By Benhito. I received a telegram in the morning from him. He said it was urgent.
+
+Jones: And where is this telegram now?
+
+Anttonio: ...It has been.. Erased. I was told to burn it in the fireplace.
+
+Jones: And what happened at the backdoor?
+
+Anttonio: Nothing. I knocked, I twisted the doorknob, but.. No one answered. Then, I heard the footsteps of my mother. 
+
+Anttonio: I was asked to come alone, so I hurried off with her towards the main entrance. I did not have time to pick the backdoor lock.
+
+Jones: ...A tall tale, Sir. But... allow me to put forward a different explanation.
+
+Jones: Maria was cooking for Benhito, while, as she said, you were in the washroom. That was a lie on your part. 
+
+Jones: You headed off in secrecy and picked the lock of Benhito's backdoor. 
+
+Jones: You may have attacked Benhito, grabbing the doorbell rope and attempted to disguise it as a suicide. 
+
+Jones: The victim struggled, and knocked over the vase, but that would have been alright, wouldn't it?
+
+Jones: Anyone encountering the scene would imagine it was knocked over by the choking victim's feet.
+
+Jones: But you forgot one piece of evidence, quintessential to a suicide.
+
+OPEN LOG: [open6]
+
+Jones: Something that isn't in the evidence. A suicide note.
+
+Jones: How could you forget? Well, perhaps while fabricating the scene, a certain Italian gentlewoman kept calling for the victim.
+
+Jones: In a panic, you rushed out the backdoor and met up with your mother. You picked the lock of the main entrance, and... 
+
+Jones: Became a witness.
+
+Maria: ...
+
+Anttonio: This is madness, madness! It is all a theory! Where is your evidence?
+
+Jones: The fingerprints on the knob, sir. 
+
+Anttonio: You.. you! Believe me... someone sent a telegram. I, I saw someone! A shadow.. When I was picking the back lock...
+
+Jones: Well... we can discuss this in the department, can we not? 
+
+Anttonio: I.. I saw someone! Trust me! Please...
+
+Maria: Trust... Ms. Polizia. You said I could trust you. Why...
+
+Maria: Why are you not trusting my son? Why?
+
+Jones: ...I'm sorry, Maria.
+
+IN ATHENA'S MIND: [02]
+
+Jones: (He.. he did it. I am sure of it. Everything falls into place, doesn't it?)
+
+Jones: (What did he say again?)
+
+Jones: (Telegrams.. and a shadowy 'phantom' spotted while picking a lock... A shadow that he remembered only while being accused.)
+
+Jones: (He was lying. But.. why? Why did he do it? Were they not colleagues?)
+
+Jones: (Everything falls into place neatly... too neatly.)
+
+Jones: (But what... was his motive?)
+
+END: [close]

@@ -98,11 +98,11 @@ while game_loop:
         if button_back.draw(screen):
             state_start = False
         if button_case1.draw(screen):
-            exec(open("Case1.py").read())
+            exec(open(os.path.join(main_dir, "Case1.py")).read())
         if button_case2.draw(screen):
-            exec(open("Case2.py").read())
+            exec(open(os.path.join(main_dir, "Case2.py")).read())
         if button_case3.draw(screen):
-            exec(open("Case3.py").read())
+            exec(open(os.path.join(main_dir, "Case3.py")).read())
 
     elif state_options:
         screen.fill('Black')
