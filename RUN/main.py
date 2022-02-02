@@ -10,11 +10,9 @@ main_dir = os.path.split(os.path.abspath(__file__))[0]
 
 
 main_dir = os.path.split(os.path.abspath(__file__))[0]
-
-data_dir = os.path.join(main_dir, "Data")
-img_dir = os.path.join(data_dir, "Images", "Menu")
-font_dir = os.path.join(data_dir, "Fonts")
-music_dir = os.path.join(data_dir, "Music")
+img_dir = os.path.join(main_dir, "Images", "Menu")
+font_dir = os.path.join(main_dir, "Fonts")
+music_dir = os.path.join(main_dir, "Music")
 
 h=int((infoObject.current_h-50)/1.3566666666666667) +30
 hf=int((infoObject.current_h-50)/1.3566666666666667)+80

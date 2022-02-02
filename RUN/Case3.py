@@ -10,10 +10,9 @@ from pyglet import font
 import os
 import pygame
 main_dir = os.path.split(os.path.abspath(__file__))[0]
-data_dir = os.path.join(main_dir, "Data")
-script_dir = os.path.join(data_dir, "Script")
-font_dir = os.path.join(data_dir, "Fonts")
-img3_dir= os.path.join(data_dir, "Images", "Cases 2&3")
+script_dir = os.path.join(main_dir, "Script")
+font_dir = os.path.join(main_dir, "Fonts")
+img3_dir= os.path.join(main_dir, "Images", "Cases 2&3")
 
 script_case3 = os.path.join(script_dir, "MainTutorial3.txt")
 script_endA = os.path.join(script_dir, "A.txt")

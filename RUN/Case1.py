@@ -10,10 +10,9 @@ from pyglet import font
 import os
 
 main_dir = os.path.split(os.path.abspath(__file__))[0]
-data_dir = os.path.join(main_dir, "Data")
-script_dir = os.path.join(data_dir, "Script")
-font_dir = os.path.join(data_dir, "Fonts")
-img1_dir= os.path.join(data_dir, "Images", "Case 1")
+script_dir = os.path.join(main_dir, "Script")
+font_dir = os.path.join(main_dir, "Fonts")
+img1_dir= os.path.join(main_dir, "Images", "Case 1")
 
 
 tutorial_file = open(os.path.join(script_dir, "MainTutorial.txt") , 'r')
