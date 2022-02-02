@@ -13,7 +13,27 @@ main_dir = os.path.split(os.path.abspath(__file__))[0]
 data_dir = os.path.join(main_dir, "Data")
 script_dir = os.path.join(data_dir, "Script")
 font_dir = os.path.join(data_dir, "Fonts")
-img2_dir= os.path.join(data_dir, "Images", "Case 2")
+img2_dir= os.path.join(data_dir, "Images", "Cases 2&3")
+
+img_textframe = os.path.join(img2_dir, "textframe.png")
+img_Scene4 = os.path.join(img2_dir,'Scene4.png')
+img_Locke = os.path.join(img2_dir,"Locke.png")
+img_Charles_removebg = os.path.join(img2_dir,"Charles-removebg-preview.png")
+img_Scene5 = os.path.join(img2_dir,'Scene5.png')
+img_Road = os.path.join(img2_dir,"Road.png")
+img_Cars_11 = os.path.join(img2_dir,"Cars_11.png")
+img_Note1 = os.path.join(img2_dir,"Note1.png")
+img_James = os.path.join(img2_dir,"James.png")
+img_Autopsy = os.path.join(img2_dir,"Autopsy.png")
+img_Scene6 = os.path.join(img2_dir,"Scene6.png")
+img_Todo = os.path.join(img2_dir,"Todo.png")
+img_Records = os.path.join(img2_dir,"Records.png")
+img_Scene7 = os.path.join(img2_dir,"Scene7.png")
+img_Zimmerman = os.path.join(img2_dir,"Zimmerman.png")
+img_Scene8 = os.path.join(img2_dir,"Scene8.png")
+img_Road_1 = os.path.join(img2_dir,"Road_1.png")
+img_Car = os.path.join(img2_dir,'Car.png')
+img_Note1 = os.path.join(img2_dir,'Note1.png')
 
 
 tutorial_file = open(os.path.join(script_dir, "MainTutorial2.txt"), 'r')
@@ -38,7 +58,7 @@ GameWindow.resizable(width=False, height=False)
 GameWindow.title('Discrepancy')
 GameWindow.geometry('600x500'+"-"+str(w)+"-"+str(int((scr_h/4.32))))
 SceneScreen= Canvas(GameWindow, width=600, height=500)
-TextFrame=PhotoImage(file=os.path.join(img2_dir, "textframe.png"))
+TextFrame=PhotoImage(file=img_textframe)
 SceneScreen=Canvas(GameWindow, width=600, height=500)
 SceneScreen.create_image(300,400,image=TextFrame)
 LineButton=ttk.Button(SceneScreen, text='     >     ')
@@ -225,7 +245,7 @@ class Wit:
       SceneScreen.tag_bind(Obj_id, "<Leave>", lambda p: hoverfalsewit())
       SceneScreen.tag_bind(Obj_id, "<Button-1>", lambda p: clicktruewit(speaker, dialogue, Obj_id))
       SceneScreen.pack(side='bottom')
-Scene004=Obj(os.path.join(img2_dir,'Scene4.png'), 300,150)
+Scene004=Obj(img_Scene4, 300,150)
 Scene004.create()
 countobj=0
 countwit=0
@@ -251,9 +271,9 @@ def next_line():
             global Scene004
             global Scene04, Pers001
             del Scene004
-            Scene04=Obj(os.path.join(img2_dir,'Scene4.png'), 300,150)
+            Scene04=Obj(img_Scene4, 300,150)
             Scene04.create()
-            Pers001=Wit(os.path.join(img2_dir,"Locke.png"),150,220)
+            Pers001=Wit(img_Locke,150,220)
             Pers001.create()
             SceneScreen.update()
             SceneScreen.pack()
@@ -262,13 +282,13 @@ def next_line():
             del Scene04
             del Pers001
             global Scene4, Pers1, Pers2
-            Scene4=Obj(os.path.join(img2_dir,'Scene4.png'), 300,150)
+            Scene4=Obj(img_Scene4, 300,150)
             Scene4.create()
-            Pers1=Wit(os.path.join(img2_dir,"Locke.png"),150,220)
+            Pers1=Wit(img_Locke,150,220)
             Pers1.create()
             countobj=0
             countwit=0
-            Pers2=Wit(os.path.join(img2_dir,"Charles-removebg-preview.png"),150,100)
+            Pers2=Wit(img_Charles_removebg,150,100)
             Pers2.create()
             SceneScreen.update()
             SceneScreen.pack()
@@ -279,20 +299,20 @@ def next_line():
             del Pers2
             global Scene5,Obj1_5,Obj2_5,Obj3_5,Pers_L1
             SceneScreen.update()
-            Scene5=Obj(os.path.join(img2_dir,'Scene5.png'), 300,150)
+            Scene5=Obj(img_Scene5, 300,150)
             Scene5.create()
             SceneScreen.update()
             countobj=0
             countwit=0
-            Obj1_5=Obj(os.path.join(img2_dir,"Road.png"),300,150)
+            Obj1_5=Obj(img_Road,300,150)
             Obj1_5.create()
             Obj1_5.active("Jones","(The road... supposedly deserted when found. Bustling with traffic at the moment.)",2)
-            Obj2_5=Obj(os.path.join(img2_dir,"Cars_11.png"),300,160)
+            Obj2_5=Obj(img_Cars_11,300,160)
             Obj2_5.create()
             Obj2_5.active("Jones","(The car... the tire marks point towards the intersection, but then veer towards the tree.)",2)
-            Obj3_5=Obj(os.path.join(img2_dir,"Note1.png"),400,140)
+            Obj3_5=Obj(img_Note1,400,140)
             Obj3_5.create()
-            Pers_L1=Wit(os.path.join(img2_dir,"Locke.png"),460,100)
+            Pers_L1=Wit(img_Locke,460,100)
             Pers_L1.create()
             SceneScreen.update()
             SceneScreen.pack()
@@ -301,16 +321,16 @@ def next_line():
             del Scene5,Obj1_5,Obj2_5,Obj3_5,Pers_L1
             global Scene05,Obj1_05,Obj2_05,Obj3_05
             SceneScreen.update()
-            Scene05=Obj(os.path.join(img2_dir,'Scene5.png'), 300,150)
+            Scene05=Obj(img_Scene5, 300,150)
             Scene05.create()
             SceneScreen.update()
             countobj=0
             countwit=0
-            Obj1_05=Obj(os.path.join(img2_dir,"Road.png"),300,150)
+            Obj1_05=Obj(img_Road,300,150)
             Obj1_05.create()
-            Obj2_05=Obj(os.path.join(img2_dir,"Cars_11.png"),300,160)
+            Obj2_05=Obj(img_Cars_11,300,160)
             Obj2_05.create()
-            Obj3_05=Obj(os.path.join(img2_dir,"Note1.png"),400,140)
+            Obj3_05=Obj(img_Note1,400,140)
             Obj3_05.create()
             SceneScreen.update()
             SceneScreen.pack()
@@ -319,18 +339,18 @@ def next_line():
             del Scene05,Obj1_05,Obj2_05,Obj3_05
             global Scene005,Obj1_005,Obj2_005,Obj3_005,Pers_J
             SceneScreen.update()
-            Scene005=Obj(os.path.join(img2_dir,'Scene5.png'), 300,150)
+            Scene005=Obj(img_Scene5, 300,150)
             Scene005.create()
             SceneScreen.update()
             countobj=0
             countwit=0
-            Obj1_005=Obj(os.path.join(img2_dir,"Road.png"),300,150)
+            Obj1_005=Obj(img_Road,300,150)
             Obj1_005.create()
-            Obj2_005=Obj(os.path.join(img2_dir,"Cars_11.png"),300,160)
+            Obj2_005=Obj(img_Cars_11,300,160)
             Obj2_005.create()
-            Obj3_005=Obj(os.path.join(img2_dir,"Note1.png"),400,140)
+            Obj3_005=Obj(img_Note1,400,140)
             Obj3_005.create()
-            Pers_J=Wit(os.path.join(img2_dir,"James.png"),500,250)
+            Pers_J=Wit(img_James,500,250)
             Pers_J.create()
             SceneScreen.update()
             SceneScreen.pack()
@@ -339,22 +359,22 @@ def next_line():
             del Scene005,Obj1_005,Obj2_005,Obj3_005,Pers_J
             global Scene0005,Obj1_0005,Obj2_0005,Obj3_0005,Aut,Pers_J0,PersLo1
             SceneScreen.update()
-            Scene0005=Obj(os.path.join(img2_dir,'Scene5.png'), 300,150)
+            Scene0005=Obj(img_Scene5, 300,150)
             Scene0005.create()
             SceneScreen.update()
             countobj=0
             countwit=0
-            Obj1_0005=Obj(os.path.join(img2_dir,"Road.png"),300,150)
+            Obj1_0005=Obj(img_Road,300,150)
             Obj1_0005.create()
-            Obj2_0005=Obj(os.path.join(img2_dir,"Cars_11.png"),300,160)
+            Obj2_0005=Obj(img_Cars_11,300,160)
             Obj2_0005.create()
-            Obj3_0005=Obj(os.path.join(img2_dir,"Note1.png"),400,140)
+            Obj3_0005=Obj(img_Note1,400,140)
             Obj3_0005.create()
-            Pers_J0=Wit(os.path.join(img2_dir,"James.png"),500,250)
+            Pers_J0=Wit(img_James,500,250)
             Pers_J0.create()
-            PersLo1=Wit(os.path.join(img2_dir,"Locke.png"),460,100)
+            PersLo1=Wit(img_Locke,460,100)
             PersLo1.create()
-            Aut=Obj(os.path.join(img2_dir,"Autopsy.png"),550,100)
+            Aut=Obj(img_Autopsy,550,100)
             Aut.create()
             SceneScreen.update()
             SceneScreen.pack()
@@ -363,18 +383,18 @@ def next_line():
             del Scene0005,Obj1_0005,Obj2_0005,Obj3_0005,Aut,Pers_J0,PersLo1
             global acountobj,acountwit
             global Scene6,Locke,James,Todo,Rec
-            Scene6=Obj(os.path.join(img2_dir,"Scene6.png"),300,150)
+            Scene6=Obj(img_Scene6,300,150)
             Scene6.create()
             acountobj=0
             acountwit=0
-            Locke=Wit(os.path.join(img2_dir,"Locke.png"),510,100)
+            Locke=Wit(img_Locke,510,100)
             Locke.create()
-            James=Wit(os.path.join(img2_dir,"James.png"),90,100)
+            James=Wit(img_James,90,100)
             James.create()
-            Todo=aObj(os.path.join(img2_dir,"Todo.png"),290,100)
+            Todo=aObj(img_Todo,290,100)
             Todo.acreate()
             Todo.aactive("Jones","(The warden, Columbus\'s itinerary of the day... It ends with an early morning meeting with someone named... Zimmerman?)",2)
-            Rec=aObj(os.path.join(img2_dir,"Records.png"),200,90)
+            Rec=aObj(img_Records,200,90)
             Rec.acreate()
             Rec.aactive("Jones","(Prison records... a series of people and the \'crimes\' they committed.)",2)
             SceneScreen.update()
@@ -383,7 +403,7 @@ def next_line():
          elif str1=="[07]":
             del Scene6,Locke,James,Todo,Rec
             global Scene7
-            Scene7=Obj(os.path.join(img2_dir,"Scene7.png"),300,150)
+            Scene7=Obj(img_Scene7,300,150)
             Scene7.create()
             SceneScreen.update()
             SceneScreen.pack()
@@ -392,9 +412,9 @@ def next_line():
             del Scene7
             global Scene_7,Zimmer
             countwit=0
-            Scene_7=Obj(os.path.join(img2_dir,"Scene7.png"),300,150)
+            Scene_7=Obj(img_Scene7,300,150)
             Scene_7.create()
-            Zimmer=Wit(os.path.join(img2_dir,"Zimmerman.png"),310,250)
+            Zimmer=Wit(img_Zimmerman,310,250)
             Zimmer.create()
             Zimmer.active('Jones:' ,'Can you tell me about your meeting with Columbus Olfonso yesterday?' ,1)
             SceneScreen.update()
@@ -403,18 +423,18 @@ def next_line():
          elif str1=="[ENTER_LA]":
             del Scene_7,Zimmer
             global Scene07,Zimmer1,Locke1
-            Scene07=Obj(os.path.join(img2_dir,"Scene7.png"),300,150)
+            Scene07=Obj(img_Scene7,300,150)
             Scene07.create()
-            Zimmer1=Wit(os.path.join(img2_dir,"Zimmerman.png"),310,250)
+            Zimmer1=Wit(img_Zimmerman,310,250)
             Zimmer1.create()
-            Locke1=Wit(os.path.join(img2_dir,"Locke.png"),510,250)
+            Locke1=Wit(img_Locke,510,250)
             Locke1.create()
             SceneScreen.update()
             SceneScreen.pack()
             raise NoError
          elif str1=="[08]":
             del Scene07, Zimmer1, Locke1
-            Scene8=Obj(os.path.join(img2_dir,"Scene8.png"),300,150)
+            Scene8=Obj(img_Scene8,300,150)
             Scene8.create()
             SceneScreen.update()
             SceneScreen.pack()
@@ -431,9 +451,9 @@ def next_line():
             TextBox['state']='disabled'
             LineButton['state']='disabled'
             openlog()
-            Road=Evi(os.path.join(img2_dir,"Road_1.png"),"Road:\nCar was found on it. Supposedly deserted.", "Was it really deserted during the evening rush hour?", True)
-            Car=Evi(os.path.join(img2_dir,'Car.png'),'Car:\nThe charred remains of a car. Tire marks point towards the intersection, the sharply skidding left.','I don\'t think this has anything to do with the timing.', False)
-            Note=Evi(os.path.join(img2_dir,'Note1.png'),'Suicide Note:\nI tire of this futile existence. Perhaps it is better this way.','I don\'t think this has anything to do with the timing.', False)
+            Road=Evi(img_Road_1,"Road:\nCar was found on it. Supposedly deserted.", "Was it really deserted during the evening rush hour?", True)
+            Car=Evi(img_Car,'Car:\nThe charred remains of a car. Tire marks point towards the intersection, the sharply skidding left.','I don\'t think this has anything to do with the timing.', False)
+            Note=Evi(img_Note1,'Suicide Note:\nI tire of this futile existence. Perhaps it is better this way.','I don\'t think this has anything to do with the timing.', False)
             Road.active()
             Car.active()
             Note.active()
@@ -442,9 +462,9 @@ def next_line():
             TextBox['state']='disabled'
             LineButton['state']='disabled'
             openlog()
-            Road2=Evios.path.join(img2_dir,("Road_1.png"),"Road:\nCar was found on it. Supposedly deserted.", "This child cannot lift the road, Jones.", False)
-            Car2=Evi(os.path.join(img2_dir,'Car.png'),'Car:\nThe charred remains of a car. Tire marks point towards the intersection, the sharply skidding left.','This child cannot lift the car, Jones.', False)
-            Note2=Evi(os.path.join(img2_dir,'Note1.png'),'Suicide Note:\nI tire of this futile existence. Perhaps it is better this way.','Have \'em analyse the handwriting... just in case.', True)
+            Road2=Evi(img_Road_1,"Road:\nCar was found on it. Supposedly deserted.", "This child cannot lift the road, Jones.",- False)
+            Car2=Evi(img_Car,'Car:\nThe charred remains of a car. Tire marks point towards the intersection, the sharply skidding left.','This child cannot lift the car, Jones.', False)
+            Note2=Evi(img_Note1,'Suicide Note:\nI tire of this futile existence. Perhaps it is better this way.','Have \'em analyse the handwriting... just in case.', True)
             Road2.active()
             Car2.active()
             Note2.active()
@@ -453,9 +473,9 @@ def next_line():
             TextBox['state']='disabled'
             LineButton['state']='disabled'
             openlog()
-            Road3=Evi(os.path.join(img2_dir,"Road_1.png"),"Road:\nCar was found on it. Supposedly deserted.", 'This is brutal...', True)
-            Car3=Evi(os.path.join(img2_dir,'Car.png'),'Car:\nThe charred remains of a car. Tire marks point towards the intersection, the sharply skidding left.','This is brutal...', True)
-            Note3=Evi(os.path.join(img2_dir,'Note1.png'),'Suicide Note:\nI tire of this futile existence. Perhaps it is better this way.','This is brutal...', True)
+            Road3=Evi(img_Road_1,"Road:\nCar was found on it. Supposedly deserted.", 'This is brutal...', True)
+            Car3=Evi(img_Car,'Car:\nThe charred remains of a car. Tire marks point towards the intersection, the sharply skidding left.','This is brutal...', True)
+            Note3=Evi(img_Note1,'Suicide Note:\nI tire of this futile existence. Perhaps it is better this way.','This is brutal...', True)
             Road3.active()
             Car3.active()
             Note3.active()
@@ -469,10 +489,10 @@ def next_line():
             TextBox['state']='disabled'
             LineButton['state']='disabled'
             openlog()
-            Road4=Evi(os.path.join(img2_dir,"Road_1.png"),"Road:\nCar was found on it. Supposedly deserted.", 'It keeps bugging me... why was the road empty?', False)
-            Car4=Evi(os.path.join(img2_dir,'Car.png'),'Car:\nThe charred remains of a car. Tire marks point towards the intersection, the sharply skidding left.','Tire marks of an accident, not a suicide. Not to mention the alcohol...', False)
-            Note4=Evi(os.path.join(img2_dir,'Note1.png'),'Suicide Note:\nI tire of this futile existence. Perhaps it is better this way.','Of course... Even if we don\'t have handwriting, we can always rely on fingerprints!', True)
-            Aut1=Evi(os.path.join(img2_dir,'Autopsy.png'),"Autopsy Report:\n'Victim died of blunt force trauma to the head, indication of intoxication by alcohol.'",'Marks of an drunken crash, not a suicide. Not to mention the tire marks...', False)
+            Road4=Evi(img_Road_1,"Road:\nCar was found on it. Supposedly deserted.", 'It keeps bugging me... why was the road empty?', False)
+            Car4=Evi(img_Car,'Car:\nThe charred remains of a car. Tire marks point towards the intersection, the sharply skidding left.','Tire marks of an accident, not a suicide. Not to mention the alcohol...', False)
+            Note4=Evi(img_Note1,'Suicide Note:\nI tire of this futile existence. Perhaps it is better this way.','Of course... Even if we don\'t have handwriting, we can always rely on fingerprints!', True)
+            Aut1=Evi(img_Autopsy,"Autopsy Report:\n'Victim died of blunt force trauma to the head, indication of intoxication by alcohol.'",'Marks of an drunken crash, not a suicide. Not to mention the tire marks...', False)
             Road4.active()
             Car4.active()
             Note4.active()
@@ -515,9 +535,9 @@ def next_line():
             TextBox['state']='disabled'
             LineButton['state']='disabled'
             openlog()
-            Road5=Evi(os.path.join(img2_dir,"Road_1.png"),"Road:\nCar was found on it. Supposedly deserted.", 'Even a bustling road would definitely be deserted at 5:20 in the morning!', True)
-            It=Evi(os.path.join(img2_dir,"Todo.png"),"Itinerary:\nLists the busy life of the warden.","Yesterday was a busy day for the warden... His day ended with a meeting at 5:00.",False)
-            Car5=Evi(os.path.join(img2_dir,'Car.png'),'Car:\nThe charred remains of a car. Tire marks point towards the intersection, the sharply skidding left.','The crash...? But the road was full... or was it?', False)
+            Road5=Evi(img_Road_1,"Road:\nCar was found on it. Supposedly deserted.", 'Even a bustling road would definitely be deserted at 5:20 in the morning!', True)
+            It=Evi(img_Todo,"Itinerary:\nLists the busy life of the warden.","Yesterday was a busy day for the warden... His day ended with a meeting at 5:00.",False)
+            Car5=Evi(img_Car,'Car:\nThe charred remains of a car. Tire marks point towards the intersection, the sharply skidding left.','The crash...? But the road was full... or was it?', False)
             Car5.active()
             Road5.active()
             It.active()
@@ -526,9 +546,9 @@ def next_line():
             TextBox['state']='disabled'
             LineButton['state']='disabled'
             openlog()
-            It1=Evi(os.path.join(img2_dir,"Todo.png"),"Itinerary:\nLists the busy life of the warden.","The warden\'s day ended with a meeting at 5:00am.. With Zimmerman.",True)
-            Note5=Evi(os.path.join(img2_dir,'Note1.png'),'Suicide Note:\nI tire of this futile existence. Perhaps it is better this way.','No... this is clear evidence of manslaughter, not murder.', False)
-            Aut2=Evi(os.path.join(img2_dir,'Autopsy.png'),"Autopsy Report:\n'Victim died of blunt force trauma to the head, indication of intoxication by alcohol.'",'No... this is clear evidence of manslaughter, not murder.', False)
+            It1=Evi(img_Todo,"Itinerary:\nLists the busy life of the warden.","The warden\'s day ended with a meeting at 5:00am.. With Zimmerman.",True)
+            Note5=Evi(img_Note1,'Suicide Note:\nI tire of this futile existence. Perhaps it is better this way.','No... this is clear evidence of manslaughter, not murder.', False)
+            Aut2=Evi(img_Autopsy,"Autopsy Report:\n'Victim died of blunt force trauma to the head, indication of intoxication by alcohol.'",'No... this is clear evidence of manslaughter, not murder.', False)
             It1.active()
             Note5.active()
             Aut2.active()

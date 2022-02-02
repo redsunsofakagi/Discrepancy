@@ -1,0 +1,45 @@
+???: ...
+
+???: It's been 6 months since you disappeared, detective.
+
+???: They found nothing in the beginning. Not a scrap of evidence was left at your place.
+
+???: I... I rose through the ranks over this time. From beat cop to detective, and now I've applied for sergeant. Maybe captain one day.
+
+???: The criminals call me relentless, and so does the rest of the squad. But I know they're just as corrupt as... I've become.
+
+???: When I had the authority, I conducted my own investigation. And I found a note.
+
+???: "Jo, heading out for a talk with James. Will be back soon."
+
+???: You arrested Mr. James that night, detective. You... you brought in Ms. Joanne as well. You were not a detective, but they were willing to overlook the transgression. 
+
+???: And then, you never came back.
+
+???: It didn't take long before Mr. James and Ms. Joanne confessed and revealed the truth. Soon, they were... erased from the record.
+
+???: The rest went free, including Captain Charles. He was promoted to the minister's rank. And I became... his right hand man.
+
+???: Perhaps it's because he thinks I can be manipulated to do his bidding. Perhaps... he's right.
+
+???: Today, he gave me a list. A list of people who are considered threats, and need to be erased. It... had Mr. James' and Ms. Joanne's names on it, which have been crossed out.
+
+???: It also has your name on it, detective.
+
+???: I-I have to ensure that they are erased. It is my duty as a man of the law...And I do believe that the people on that list were criminals.
+
+???: But... seeing your name on it is the only thing that makes me question my duty.
+
+???: Today, you've officially been marked as 'dead' instead of just being a missing person. Perhaps I'm writing this letter to you just to cope with the fact that.. You won't come back.
+
+???: And perhaps this letter is my goodbye to you, and my current self, for doubting my duty.
+
+???: Captain Charles told me justice MUST be served, and we are the only ones capable of executing Lady Justice's intentions.
+
+???: Even as I write, I question whether what I call justice is a sham... but that is the mindset of the weak. 
+
+???: I will protect, and I will serve. Just as you did, detective.
+
+Locke: Sincerely, Locke.
+
+END: [openend]

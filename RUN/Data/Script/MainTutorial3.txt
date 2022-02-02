@@ -144,8 +144,6 @@ Charles: Tch. So be it.
 
 INTERROGATION: [inv]
 
-Jones: When did the death of the victim occur?
-
 Charles: 11:40 am. We had to leave for a meeting around that time. Homen was chairing it, but had left to bring back a file.
 
 Jones: "We"?
@@ -291,8 +289,6 @@ Locke: Thank you ma'am... but... I think we still have to ask you a few things.
 Jones: Yeah, Jo. How on earth did your fingerprints end up on the wires?
 
 INTERROGATION: [inv]
-
-Joanne: The boss is.. Well, was, a bit of a perfectionist. Before leaving for today's meeting he asked me to "rearrange" the wiring to his taste.
 
 Joanne: I guess proper wire management is more important than a proper salary.. Anyway, that's probably how my prints made it onto the insulation.
 
@@ -534,8 +530,6 @@ Jones: (Nothing's been tampered with. I suppose I should get on with the questio
 
 INTERROGATION: [inv]
 
-Jones: Captain. Have you seen this file before?
-
 Charles: Why yes... it's what Homen went back looking for. Where did you find it?!
 
 Jones: That can wait. Now, my partners and I established that there could be more people who had unfiltered access to the minister's room.
@@ -618,7 +612,7 @@ Locke: Detective!
 
 Jones: (......)
 
-Jones: (It's clear then)
+Jones: (It's clear then.)
 
 Jones: (I... may have lost my job.) 
 
@@ -908,7 +902,7 @@ Jones: (Right, this might be useful. A list of people... I should go over it.)
 
 Jones: ('Aava Thomson', 'Abigail Clark', 'Alex Johnson'... I don't know any of these people..)
 
-Jones: (There's multiple Alex's, Jonathan's, Ethan's and Charles' here.... None of them are the *Good Ol' Cap'n* though....or should I say.. "Criminal")
+Jones: (There's multiple Alex's, Jonathan's, Ethan's and Charles' here.... None of them have our good old Captain, though. Hm...)
 
 Jones: (...!)
 
@@ -916,7 +910,9 @@ Jones: ('Athena'...? Why is my name on here? What the hell?...Athena, Last Name 
 
 Jones: (L, L , Lo... Locke Sher... Locke's name isn't on here...)
 
-Jones: (...! 'Joanne'..? Jo's in here..? What in the... Actually, there's multiple Jo's.. Joanne Williams, Joanne Denim...Only one's last name is not known though....)
+Jones: (...! 'Joanne'..? Jo's in here..? What in the... Actually, there's multiple Jo's.. Joanne Williams, Joanne Denim...)
+
+Jones: (And only one, whose last name is not known...)
 
 Jones: (Maybe....Hopefully...a coincidence...)
 
@@ -928,9 +924,9 @@ Jones: (But....)
 
 Jones: (One... one's surname... is not known.)
 
-Jones: (This is too much of a coincidence...James, Joanne and I?...There may be multiple of them but... No....)
+Jones: (This is too much of a coincidence...James, Joanne and I?...There may be multiple of them but...)
 
-Jones: (Am I overthinking this??...)
+Jones: (Am I overthinking this...??)
 
 Jones: (Maybe....maybe not.. Better safe than sorry, I presume.)
 
@@ -940,7 +936,7 @@ Jones: (I need to speak to someone about this. Someone on here...or someone who 
 
 Jones: (Joanne... I would, but... she's gone through so much today. And I was never able to prove that she was fully innocent.)
 
-Jones: (Maybe it's for the best if I don't get her involved..)
+Jones: (Maybe it's for the best if I don't get her involved...)
 
 Jones: (I suppose that only leaves... James.)
 
@@ -1021,6 +1017,8 @@ Jones: (It reads... 'Operation Lavender: Eliminating homosexuals from federal po
 Jones: ('Key members: Minst. Of Home Affairs Homen Ofobia, Lead Scientist Prof. Zimmerman, Warden Columbus Olfonso, Captain Charles Kane.')
 
 Jones: (I...)
+
+... : [ENTER JAMES]
 
 James: Athena? Is that you? 
 

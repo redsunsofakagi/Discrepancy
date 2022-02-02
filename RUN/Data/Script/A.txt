@@ -1,0 +1,35 @@
+???: ...
+
+???: It's been 6 months since you disappeared, detective.
+
+???: They found nothing in the beginning. Not a scrap of evidence was left at your place. Neither you, nor Ms. Joanne could be traced.
+
+???: I... I rose through the ranks over this time. From beat cop to detective, and now I've applied for sergeant. Maybe captain one day.
+
+???: The criminals call me relentless, and so does the rest of the squad. But I know they're just as corrupt as... I've become.
+
+???: When I had the authority, I conducted my own investigation. And I found a note.
+
+???: "Jo, heading out for a talk with James. Will be back soon."
+
+???: You never came back, detective.
+
+???: But I traced down 'James'. Apparently, it was the man we investigated with in the Zimmerman case.
+
+???: His house was empty. Just like yours.
+
+???: I looked through some records, and he was blacklisted on all of them... I found out his true self.
+
+???: ...
+
+???: What... What did that criminal do to you? Why did you disappear? 
+
+???: ...I write this letter to you today... since you're no longer a missing person, detective. You're 'dead'. At least, that's what the records will say.
+
+???: ...
+
+???: I will avenge you. I will hunt down Mr. James if it's the last thing I do. And when I find him... I will leave a permanent piece of metal in that conniving skull of his.
+
+Locke: Yours sincerely, Locke.
+
+END: [openend]
