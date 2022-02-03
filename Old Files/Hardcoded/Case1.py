@@ -397,8 +397,6 @@ def next_line():
             SceneScreen.update()
             SceneScreen.pack()
             raise NoError
-         elif str1=='[close]':
-            GameWindow.destroy()
          LineButton['state']='disabled'
          TextBox['text']+=j
          TextBox.update()
