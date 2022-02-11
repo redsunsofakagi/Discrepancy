@@ -1,0 +1,477 @@
+Jones: (It's good to be working in the bureau for a change... at least I can do paperwork in peace.)
+
+Jones: (Maria came in during the afternoon to visit Anttonio in the holding cell. I hope... things go well for her.)
+
+... : [ENTER_L1]
+
+Locke: Detective, I found the mailman. He's confirmed Maria's alibi... but about Anttonio...
+
+Jones: It's okay kid. We'll tell Maria later. You alright?
+
+Locke: Well.. I'm fine. It's the first time I saw a murder, is all...
+
+... : [ENTER_C]
+
+???: Oh, baby's first murder, was it?
+
+Locke: Huh?
+
+Jones: Back off, Charles. 
+
+Charles: Ohho! Protecting the youngling? Finally decided to embrace your motherly instincts, Athena?
+
+Locke: What do you mean!?
+
+Jones: Take it easy kid... this isn't worth it.
+
+Charles: Heh.. you know, Athena, I hope you remember why you work here. Don't go around forgetting that, hm? If you do.. Well, that badge wouldn't be of much use now, would it?
+
+Locke: !?
+
+Jones: Yes, Charles.
+
+Charles: A-A-Ah. We aren't colleagues, Detective. With title, please.
+
+Jones: ...Yes, Captain. What. Do you want.
+
+Charles: Ah, finally gotten to the point, have we? Well, the boys and I are tired after a day of real work, and someone just called in a car accident a whiiille back...
+
+Charles: It'd be a shame to keep 'em waiting, Mm?
+
+Locke: But, we just solved a case this morning!-
+
+Charles: Shut it, lackey. It's an order.
+
+Jones: ...Let's go, Kid.
+
+CRIME SCENE 2: [05]
+
+Locke: It's.. brutal, detective.
+
+Jones: Yeah, I see it kid.
+
+Locke: The victim was id'd as Columbus Olfonso. He was the warden of the Stonewall Detention Center.
+
+Jones: (Odd name... and the warden of Stonewall? That's a big position to replace..)
+
+Locke: He seemed to have been driving at full speed towards the intersection right... over there. But his car skidded and he crashed into the tree. He died from his injuries. 
+
+Jones: What did forensics make of it?
+
+Locke: The coroners don't suspect any other cause of death, though they're still working on the autopsy report. They've taken away the body, but...
+
+Locke: ...while doing so, they found a suicide note in the front pocket of his coat.
+
+Jones: What did it say?
+
+Locke: See for yourself, detective.
+
+Jones: ("I tire of this futile existence. Perhaps it is better this way.")
+
+Jones: Maybe he lamented the innocent he forsook...
+
+Locke: Hah! As if they were innocent!
+
+Jones: ...
+
+Locke: Right?
+
+Jones: ...Regardless, who discovered the accident?
+
+Locke: It was the local traffic cop. No witnesses to question too. The road was completely deserted when he found the burning car.
+
+Jones: Hmm, Interesting. Mind if I look around a bit?
+
+Locke: Alright, but.. Can we wrap this up quickly? It seems like it was just an accident...
+
+Jones: I'll try, kid. (If only it were that easy.)
+
+INVESTIGATION: [inv]
+
+Jones: Kid, when was the accident reported?
+
+Locke: Uhh.. around 5:40, I think.
+
+Jones: And did the coroner mention the time of death?
+
+Locke: Oh, he estimated that it was around 20 minutes before the body was found.
+
+Jones: Doesn't that strike you as odd, kid?
+
+Locke: What do you mean?
+
+Jones: The accident happened around 5:20 then, right? In other words...
+
+OPENLOG: [open1]
+
+Jones: An empty road during rush hour. That's a bit.. off, isn't it?
+
+Locke: Oh.. I thought this would be a simple one...
+
+Jones: Don't worry about it, kid. Considering the last one... Well, better safe than sorry, hm?
+
+Locke: Yeah.. maybe... this was also...
+
+Jones: (I think he caught my drift...) Well, if you have your suspicions, can ya run an errand for me?
+
+Locke: Oh! Yes detective, of course!
+
+Jones: Take this..
+
+OPENLOG: [open2]
+
+Jones: The victim was the warden, right? Could you get someone to match up the handwriting of the note with the prison records?
+
+Locke: Oh, yes, sure! I'll be back in no time.
+
+Jones: See ya, kid.
+
+... : [LEAVE_L]
+
+Jones: (Well, nothing better than thinking about a case in solitude, hm?)
+
+Jones: (A deserted road during rush hour... how does that even end up happening? And the tire marks too. It looks an awful lot like another fake suicide...)
+
+Jones: (Ah, at least the smell of lavenders accompanies me. It was with us at Benhito's as well...)
+
+Jones: (I wonder what Joanne is up to... perhaps sending the lavender scent my way?)
+
+Jones: (Ah, Jo. Your garden doesn't know the bounds of the city, does it-?)
+
+... : [ENTER_J]
+
+???: Athena Jones. Long time no see..
+
+Jones: ...James, is that you?
+
+James: Well well, why wouldn't it be?
+
+Jones: Hah! Why not? How are things, old chum? Still working at the library?
+
+James: Hmph, you forget your namesake, Athena! I'm a professor of Greek History!
+
+Jones: Yeah yeah, you work at the library. You don't need to say it twice.
+
+James: Hey!
+
+Jones: Hah! So what brings you here to an intersection bustling with traffic? Out on a date, hm?
+
+James: I... Well, we... Let's say we broke up. Just loitering about now, as one does.
+
+Jones: Oh..! I'm so sorry James. I'm working on a case, but feel free to stay, alright?
+
+James: Thank you, Athena. The goddess of wisdom is too kind...
+
+Jones: Hah, don't worry about it. 
+
+James: ...Well, while your old librarian is here, gimme the case files and your notes, let me have a look for myself as well. A second pair of eyes won't hurt, eh?
+
+Jones: Hey, back off! We're not supposed to disclose details to the public.. I can't show you these.
+
+James: Hmph... since when did you become a stickler for the rules?
+
+Jones: ...
+
+Jones: You know I somehow ended up on the warfront, James. It's... always been that way.
+
+James: Alright, if you say so...
+
+Jones: ...
+
+Jones: ....Argh, fine! You got me. Have a look.
+
+OPENLOG: [open3]
+
+James: So... suicide by car, eh? Don't see that often.
+
+Jones: Yeah.. But the whole case is off. Nothing is concrete yet but... It feels like this suicide was faked.
+
+James: I see...
+
+Jones: What strikes me as the oddest are the tire marks.
+
+James: And why is that?
+
+Jones: Well... It looks like an accident, doesn't it? If you wanted to die, you would have rammed into the tree directly. This looks like a crash.
+
+Jones: But it doesn't explain the suicide note...
+
+James: ...Do you mean it was-
+
+... : [ENTER_L]
+
+Locke: *Huff, huff* DETECTIVE! I just got back the results from the records. And... it's all different. None of the words match!
+
+James: Murder...?
+
+Jones: ...Precisely.
+
+Locke: I visited the coroner as well. You're going to want to take a look at the autopsy report.
+
+James: "Death due to blunt force trauma to the head, but severe levels of blood alcohol were found. May have been intoxicated before the accident."
+
+Jones: What the...
+
+Locke: My head is spinning...
+
+James: So was our victim's, apparently.
+
+James: An accident, a suicide and a drunkard...
+
+Jones: (How the hell am I supposed to proceed now?)
+
+OPENLOG: [open4]
+
+Jones: Locke! Did forensics find any fingerprints on the note?
+
+Locke: I'm afraid not, detective... all they found were glove marks...
+
+Jones: (Glove marks? Interesting...)
+
+Jones: James, are you alright? You don't need to bother yourself with all this.
+
+James: ...I'm fine, Athena. A twisted place, this world, isn't it? A black and white of murder and suicide... But neither is free of guilt.
+
+Jones: ...
+
+James: Ah, I apologise for my musings. Shall we go over the details once more?
+
+Jones: Thank you, James. So...
+
+Jones: Tire marks of a car that crashed, and an autopsy showing intoxication. It can only mean...
+
+OPENLOG: [open5]
+
+James: That it was definitely an accident.
+
+Jones: Right. And if it was an accident, then-
+
+OPENLOG: [open6]
+
+Jones: The suicide note had to have been planted... but we already know that, don't we?
+
+Locke: Yes.. the handwriting is completely different. Not to mention the lack of fingerprints...
+
+James: Hold on a minute.. No fingerprints were found because the suspect was wearing gloves, correct?
+
+Jones: I'm afraid so...
+
+James: Would that not mean that the crime was premeditated?
+
+Locke: If that's the case, then... How was it an accident? It can't be both...
+
+James: What do you think, Jones?
+
+OPENLOG: [open7]
+
+Jones: Maybe we don't have enough to say for sure. We should gather more evidence, I suppose.
+
+Locke: From where??
+
+James: Probably the victim's office, I presume.
+
+Jones: Exactly.
+
+THE OFFICE: [06]
+
+Jones: ...(So... we obtained a warrant to search Columbus's office. Let's take a look around, shall we?)...
+
+INVESTIGATION: [inv1]
+
+James: These records are... very, very interesting.
+
+Jones: Be happy that they're open to the public. Otherwise you'd be a felon.
+
+James: Hah! I'd be more of a criminal than some of the people on this list!
+
+Locke: I'm sure they deserve their sentences.
+
+James: You'd be surprised, child.
+
+Jones: Hush it, you two. What do you make of the name 'Zimmerman'?
+
+Locke: Detective, you haven't heard of Prof. Eicheich Zimmerman? He's an amazing scientist. A revolutionary chemist!
+
+James: And a horrible person. We used to be colleagues once, in university... He's part of the science ministry now, and fires those who do not conform to his view of the world.
+
+Jones: We have more important things to discuss. Firstly, the death occurred at 5:20 pm, correct?
+
+Locke: Yes, detecti-
+
+James: No-
+
+Locke: Huh?
+
+Jones: What do you mean, James?
+
+James: Oh, I, erm- Well, I thought I read it in your notes that the road was deserted? I assumed it was in the morning.
+
+Jones: Come to think of it... Locke, did the traffic police mean 5:40 am or pm?
+
+Locke: Well... I don't remember them specifying when they told me. I just assumed it was 5:40pm.
+
+Jones: Well, if the timings were early, then it explains...
+
+OPENLOG: [open8]
+
+Jones: The road! No wonder it was deserted when they found it. It lines up with the busy schedule of the warden as well.
+
+Locke: So the real time of death was 5:20am...
+
+James: Ah..perhaps after leaving his last meeting.
+
+Jones: And about that meeting. This Zimmerman fellow, he's a... what do you call it? Chemicalist?
+
+Locke: Detective... you need to work on your vocabulary. It's 'chemist'.
+
+Jones: And you on your sass, kid. Is it safe to assume he carries his own equipment around?
+
+Locke: He pioneered his own variety of Nylon gloves and fibreglass safety goggles! You don't see him without 'em!
+
+Jones: Nylon, huh? Can forensics find out the kind of imprint left by a glove? Have 'em check for nylon, will ya?
+
+Locke: I think they can. But... you can't be saying that...
+
+Jones: We need to find out about this meeting, kid.
+
+Locke: You-you think Zimmerman spiked the warden's drink during the meeting?
+
+Jones: I don't know, but if the special glove marks match... then..
+
+Locke: But-but that doesn't make sense!
+
+Jones: I know. A killer never returns to the scene of the crime.. But it's our only lead.
+
+Locke: I-alright. I'll meet you at his apartment.
+
+Jones: Alright. Let's go, James.
+
+Jones: James...?
+
+James: It's getting late, Athena. I don't want to catch a cold...
+
+Jones: Aww, that's okay. Does my friend want to return to the warm embrace of the library?
+
+James: Hmph! Perhaps he does, Athena. But... Thank you for this.
+
+Jones: Eh, don't worry about it.
+
+James: I'll be at my office if you need anything, alright?
+
+Jones: Yeah, yeah, I'll see you in the library.
+
+AT ZIMMERMAN'S: [07]
+
+Jones: (So, here we are. Zimmerman's office. It's.. huge.)
+
+Jones: *knock* *knock* *knock* Anyone home?
+
+... : [ENTER_Z]
+
+???: Ja, ja, come in.
+
+Jones: Good evening, sir. I am from the police. Are you, perhaps, Professor Zimmerman?
+
+Zimmerman: Indeed, that would be I. Though YOU are not from the police, ja?
+
+Jones: I get that a lot. May I ask you a few questions?
+
+Zimmerman: Tch! Go ahead, woman.
+
+INTERROGATION: [inv]
+
+Zimmerman: Yes. We met at a bar, ja?
+
+Jones: Alright, and what were you two discussing?
+
+Zimmerman: That is government information, ja? None of your business.
+
+Jones: ...Very well then. What happened after the meeting?
+
+Zimmerman: Hah, we went home, what else?
+
+Jones: Sir... Are you aware that Columbus Olfonso died last night?
+
+Zimmern: Mein Gott... what happened to him?
+
+Jones: We are still investigating, but he may have suffered from alcohol poisoning... he crashed and died due to blunt force trauma to the head.
+
+Zimmerman: ...
+
+Jones: Did you notice anything suspicious last night? His driving, perhaps?
+
+Zimmerman: We... We shared the same route in the beginning, yes. Now that you mention it, his driving was quite shaky...
+
+Jones: Did you do anything about it?
+
+Zimmerman: No... honestly, he'd always been a rash driver... so I didn't think much of it... Oh, if I had not overtaken him maybe I could have saved him?
+
+Jones: I'm sorry, sir-
+
+... : [ENTER_LA]
+
+Locke: Detective...! Y-You were right. The imprint, it's nylon. I did an additional test and it perfectly matches with the... suspect's gloves.
+
+Zimmerman: Eh? Who are you, and w-what are you talking about?
+
+Jones: He's with me. And sir, you are under arrest.
+
+Zimmerman: Y-you dare? I know my rights! Why am I being arrested?
+
+Jones: Let's say we found a suicide note that we can guarantee was planted into the crime scene. The handwriting on that note would be easy to cross check with your own.
+
+Jones: There were no fingerprints on the note, but glove marks. Normally, people use latex gloves for crime... but these were special. They were made of nylon.
+
+Jones: Identical to the ones you are wearing now.
+
+Zimmerman: !?
+
+Jones: We found tire marks at the scene of the crime which indicate an accident occured. A hit and run, perhaps? Add a suicide note to shift the blame?
+
+Jones: Professor Zimmerman, you are under arrest on a count of manslaughter and possibly murder. You have the right to remain-
+
+Zimmerman: -Silent!?? You think I will remain silent?! FINE, I ADMIT, JA. I was driving fast in my lane, and the warden hit the brakes. I-I hit him...
+
+Zimmerman: I-I was scared... my reputation precedes me... I left the suicide note in a hurry. I thought it was smart! I had my own gloves! But... 
+
+Zimmerman: I-It was an accident! Ja! Not manslaughter!
+
+Jones: Manslaughter- the crime of killing without malice aforethought.
+
+Zimmerma: Oh... but you said murder, too! What do you mean, woman?!
+
+Jones: I'll show you what I mean.
+
+OPENLOG: [open9]
+
+Jones: You were the last person he met that day, is it not? At a bar no less. I doubt there would be anyone else except a groggy bartender.
+
+Jones: It isn't a leap to assume you spiked his drink, hm?
+
+Zimmerman: You DARE? I will sue you! I did not commit murder. I did not...
+
+Jones: Remember, sir. What you say can and will be used against you in court. As I said, you can stay silent, or... 
+
+Locke: Detective....
+
+Zimmerman: I... You..!
+
+Jones: Bring him in, Locke.
+
+IN ATHENA'S MIND: [08]
+
+Jones: (A horrible liar, wasn't he?)
+
+Jones: (Admitting to manslaughter just to refute murder, it's... comical)
+
+Jones: (The only person who could spike the drink, still resisting the charge.)
+
+Jones: (I can't help but wonder... why? Why resist?)
+
+Jones: (Why resist the inevitable... to escape consequences? To retain power?)
+
+Jones: (But if so...Why did he do it in the first place...?)
+
+Jones: (...Why?)
+
+END: [close]

@@ -1,0 +1,1221 @@
+???: Honey! Honey, wake up!
+
+Jones: Mmmmngh...
+
+???: Oh, damn it, Athena! God knows how you became so lazy. It's been what, a month since we moved in together? Get a grip, man!
+
+Jones: nOoOooo...
+
+???: ...I want to stay mad but you look especially funny when groggy. Hah..
+
+???: Look, I have to go. The boss, that bastard... he's going to fire me if I'm even a second late.
+
+Jones: No.... stay..
+
+???: ...
+
+???: I'll be back soon, 'kay? Take a day off if you can, yesterday must've taken a toll.
+
+Jones: Mmmm...
+
+... : [ENTER_Locke]
+
+Door: *KNOCK* *KNOCK *KNOCK*
+
+Jones: ...
+
+Jones: ...(Ow.. My back hurts. I want to go back to bed...)
+
+Door: *KNOCK* *KNOCK *KNOCK*
+
+Jones: (Ugh.. Is someone at the door?)
+
+Door: *KNOCK* *KNOCK *KNOCK* *KNOCK* *KNOCK*
+
+Jones: Coming, coming!
+
+INVESTIGATION: [inv]
+
+... : [ENTER_Locke1]
+
+Locke: Detective.. I'm sorry, it was urgent...
+
+Jones: Locke? What are you doing here?
+
+Locke: The captain.. He wanted the whole team to be there... there's been an incident...
+
+Jones: What happened?
+
+Locke: The head of the Ministry of Home Affairs... he's... he's dead!
+
+Jones: What?!
+
+Locke: Yeah... we need to go, now!
+
+Jones: Let's go...
+
+MINISTRY OFFICE: [10]
+
+Locke: So... here we are.
+
+Jones: (An office I'm all too familiar with.)... The head office of the Ministry of Home Affairs.
+
+Locke: It has such an oppressive aura about it...
+
+Jones: ...
+
+Locke: Detective, are you alright?
+
+Jones: I-I'm fine. I-My.. roommate. She works here...
+
+... : [ENTER_CH]
+
+Charles: Well, well well! Look who decided to show up. Sleeping in, were we?
+
+Jones: Tell me what happened, Charles.
+
+Charles: Aren't we forgetting something?
+
+Jones: ...Captain Charles.
+
+Charles: Good. Well, from what we can tell, it was an accident. But ministers don't just drop dead like flies, do they?
+
+Jones: So... someone faked it as an accident?
+
+Charles: It appears so. But your late arrival has saved you some work. We've apprehended a suspect.
+
+... : [ENTER_Jo]
+
+???: Athena!
+
+Jones: (No....!)
+
+Jones: Joanne?! What the hell!?
+
+Joanne: I, I didn't do it!
+
+Charles: Ohho! It appears the detective knows the suspect.
+
+Jones: ...Explain, Charles.
+
+Charles: Ah, I'd love to, but why don't you have a look around first? It'll make things easier for me, hm?
+
+INVESTIGATION: [inv]
+
+Charles: Are you done, det-
+
+Jones: -How. How is Joanne connected to any of this?!
+
+Charles: Whoa, I'm getting to the good part, slow down!
+
+Charles: Your cute friend over there works as a secretary, or so I hear. She was patiently sitting right outside when we arrived as well.
+
+Charles: Ah, the privilege of a secretary! To enter your boss's office as you please. You wouldn't know the pleasure, would you?
+
+Jones: Are you really telling me she was arrested just because she was supposedly the only one who could access his office?!
+
+Charles: Ah, a scathing review, Ms. Athena! You found the bill, yes? Completely smudged with your friend's fingerprints.
+
+Jones: It has the ministry symbol on it, damn it! The victim could have picked it up for something, or maybe it was planted, or-
+
+Charles: Where is your wisdom, oh Athena? All the wires are laden with her fingerprints as well.
+
+Charles: Wires from an outlet within the office! How would one go about planting those?
+
+Locke: ...He's right.
+
+Jones: (No, no! They've jumped to conclusions. I have to speak to Joanne...)
+
+Charles: Hmph, I'm afraid your expressions tell all, Athena. Emotional as you all are. You may not speak with the suspect.
+
+Jones: Why?! I have the right to interrogate a witness, you little-
+
+Charles: -And I, as your captain, have the right to stop you. Your bias towards the victim should not interfere, yes?
+
+Jones: (I... I'll have to prove it then. Prove why Joanne couldn't have done it.)
+
+Jones: I'll interrogate you, then.
+
+Charles: What.
+
+Jones: You made the arrest, right? Give me a detailed account. Of everything.
+
+Charles: Tch. So be it.
+
+INTERROGATION: [inv]
+
+Charles: 11:40 am. We had to leave for a meeting around that time. Homen was chairing it, but had left to bring back a file.
+
+Jones: "We"?
+
+Charles: Ah, I was in the building as well. Some.. let's say, government business.
+
+Jones: And what was the meeting about?
+
+Charles: Wouldn't you like to know?
+
+Jones: Never mind. Who came upon the body?
+
+Charles: Why, yours truly, of course! He'd told us that he'd forgotten a file, but it was taking too much time. 
+
+Charles: Naturally, I went to check in on him. Homen wasn't inside, but returned soon enough. Probably from the loo.
+
+Charles: He began looking for the file on his desk, and suddenly it looked like he was having a seizure.... There were loud zap noises, and then..
+
+Charles: He just... fell, and was caught by his chair.
+
+Jones: (Jesus...) Did you call the team immediately?
+
+Charles: I'm afraid not. I didn't realise he'd been electrocuted. But the lack of reaction when I tried to slap him awake was apparent enough, mm?
+
+Jones: So you approached the victim's body? But that's not possible, because...
+
+OPENLOG: [open1]
+
+Jones: The wires. They would have electrocuted you as well.
+
+Charles: Hmph. Stubborn, aren't we? Thankfully, I was waiting on the other side of the table. My feet were nowhere near the puddle, Jones.
+
+Charles: The point is, the only person who had the opportunity to set it up was our friendly secretary.
+
+Charles: Is it still hard to understand how she did it, Jones?
+
+Jones: ...Perhaps it is. Describe how you think she did it, Captain.
+
+Charles: Fine.
+
+Charles: The suspect was the only one who had access to the office other than Homen.
+
+Charles: She also knew about his itinerary. While he was out, she set up the scene.
+
+Charles: Her intention was to frame it as an accident. It's true that the building has been facing power issues of late...
+
+Charles: Perhaps under that pretence, she called up electrical, and they left behind a bill.
+
+Charles: "Erratic voltage issues", it reads... Simple enough for someone to believe that voltage might be the cause.
+
+Charles: And there you have it. Enter a scene, spill some water, throw around some wires, and voila! An electrical "accident".
+
+Charles: But what she wasn't aware of was that her boss had left behind a file.
+
+Charles: Footsteps echo in the hallway quite well, you see. She must have heard me approaching, and thought that I was Homen.
+
+Charles: Leaving the room in a hurry, she saw me and quickly settled down at her desk.
+
+Jones: So you saw her approach from the office?
+
+Charles: Indeed.
+
+Joanne: The office is right next to the bathroom, you dimwitted, numbskulled piece of-
+
+Charles: Shut it, killer. You don't have an alibi now, do you?
+
+Jones: ...Captain. Would you say this murder was premeditated?
+
+Charles: Indeed. A secretary with access to the victim's office and itinerary. Simple enough to plan, mm?
+
+Jones: Then doesn't it strike you as odd?
+
+OPENLOG: [opt1]
+
+Jones: A premeditated murder using electrocution... The killer would have to be wearing gloves, for their own safety. Those wouldn't leave fingerprints.
+
+Jones: Ironically, the presence of Joanne's fingerprints proves that she couldn't have done it.
+
+Charles: !?
+
+Charles: I-I...
+
+Charles: Tch! But what if it was not premeditated? Then the fingerprints make sense! She did it in a hurry, yes!
+
+Jones: (I've made him go back on his own logic. But he's still stubborn...)
+
+Jones: (I wonder if i can keep using his own words against him...)
+
+OPENLOG: [opt2]
+
+Jones: If it was not premeditated, you say that she wouldn't have had the presence of mind to wear gloves. For her own safety. Leaving fingerprints.
+
+Jones: But that breaks down your case completely. It must have been premeditated, or else how would she have planted the bill?
+
+Jones: She had to contact the electricians beforehand to even get the bill in the first place. That means it was planned.
+
+Jones: So you tell me, Captain. Premeditated, or not?
+
+Charles: ...
+
+Jones: Captain, I'm afraid your theory is incomplete. It is abundantly clear that Joanne didn't do it.
+
+Charles: So what do you think, Jones! Where did her fingerprints come from!?!
+
+Jones: I would've had an idea if you'd let me speak with her.
+
+Charles: Fine, go! Take her and get out. If you're so knowledgeable, you can solve the case on your own too, yes?
+
+Locke: But what-what about the rest of the team-
+
+Charles: OUT!!
+
+OUTSIDE: [11]
+
+Jones: *huff* *huff* I know he wanted us to get out, but I didn't expect to run a marathon.
+
+Locke: Phew, he sent the guards after us just to make us leave...
+
+Joanne: Out of the main building! Didn't even settle for a different floor..
+
+Jones: Who knows, maybe it brought him some piece of mind.
+
+Joanne: Yeah, well, it's not everyday that your underling destroys every ounce of logic to your case. You should have been an attorney, Thena.
+
+Jones: I-thank you, Jo. Are you alright? Tell me if you need anything.
+
+Joanne: I'm good! But Thena, you've never introduced me to your...?
+
+Jones: Shoot, where are my manners! Jo, this is Locke, my assistant. Kid, meet Joanne, my... roommate, let's say.
+
+Joanne: Hi Locke!
+
+Locke: Hello, Ms. Joanne! You and the detective must be close friends. The way the detective went against the captain...
+
+Locke: I wish I had friends like that...
+
+Jones: Yep. Friends. Partners. Roommates. Just gals being pals.
+
+Joanne: Oh, Locke! You'll make friends like that, don't worry. We'll keep you company for now, aight?
+
+Locke: Thank you ma'am... but... I think we still have to ask you a few things.
+
+Jones: Yeah, Jo. How on earth did your fingerprints end up on the wires?
+
+INTERROGATION: [inv]
+
+Joanne: I guess proper wire management is more important than a proper salary.. Anyway, that's probably how my prints made it onto the insulation.
+
+Locke: Odd how the captain wouldn't believe that.
+
+Joanne: I tried to argue with him, believe me. Maybe he found the explanation to be too convenient.
+
+Jones: What caused the wires to get all tangled up?
+
+Joanne: The boss's office had been having a lot of power issues. He called up electricians to check the outlets.
+
+Joanne: It was probably an issue of the power supply though.. They didn't find anything and left the room in a mess. Of course they charged for it, though.
+
+Jones: So that explains the electric bill...
+
+Locke: ...Would you say that the electricians had the opportunity to set up the crime scene?
+
+Joanne: No, the boss was in the office too. I doubt it could have been someone among them.
+
+Jones: Who else has access to the office, Jo?
+
+Joanne: Well other than myself and other staff... No one. Unless the boss permits them, I suppose.
+
+Jones: That's odd. Because then...
+
+OPENLOG: [opt3]
+
+Jones: How on earth, then, did Charles encounter the body?
+
+Joanne: Oh damn...you're right, all high profile members of the ministry have unrestricted access...
+
+Locke: Putting every big name employee under scrutiny...
+
+Jones: Seems like we have a lead... not easy to narrow down, but a lead regardless.
+
+Joanne: It might be easier, Thena. I can show you to the room where the boss was supposed to be having a meeting. It's a start, at least.
+
+Jones: Great. Let's go, then.
+
+RECORDS ROOM: [12]
+
+Jones: (The records room...)
+
+Joanne: Sheesh... I've never been here before. It's just used to store files, but it resembles a damn courthouse. They can afford to pay us better!
+
+Locke: It's massive...
+
+Jones: Locke, take this evidence and go ask around a bit... I'll take a look here.
+
+Locke: Sure thing, detective.
+
+... : [EXIT_Lo]
+
+Jones: (There's a lot of questions we have to answer...)
+
+Jones: (Who the hell were in this meeting, though? And why here?)
+
+Jones: (I suppose I can't connect it to anything we have at the moment. I should investigate instead...)
+
+INVESTIGATION: [inv]
+
+Jones: (Not much to look at here...)
+
+... : [LOCKE ENTERS]
+
+Locke: Detective! I checked with the guards... oddly enough, no meeting was scheduled today. The guards were off duty.
+
+Joanne: Huh? But the boss told me he had a meeting here... Hell, that brutish captain of yours was also there!
+
+Jones: Yes.. we have evidence which shows someone was here, too.
+
+OPENLOG: [open2]
+
+Jones: I found a stray plate sitting in the corner... someone had to be waiting and eating here. They also messed around with these files.
+
+Locke: The captain, probably... we should just go ask him.
+
+Jones: I doubt he'll cooperate considering he drove us off the scene. We have to figure things out on our own.
+
+Locke: Ugh, why are we here in the first place!? All we need is a list of high profile members. Can't we get that from, I don't know, the receptionist?
+
+Joanne: It's a bit more complicated than that. Not every VIP wishes to reveal that they are in the Ministry... for security reasons.
+
+Locke: Wait, VIPs  aren't permanently in the office?
+
+Jones: Not really, kid. Take the Captain. He has an office in the ministry, but let's say he didn't. He'd be stationed at the Bureau, not here.
+
+Locke: So you don't have to be an employee of the ministry to be a VIP...
+
+Jones: Yeah. But then, how are they allowed to enter rooms... or identify themselves to members of the ministry in the first place?
+
+Joanne: Ah, at the reception, VIPs can get their fingerprints matched with a fingerprint catalogue of all the VIPs. 
+
+Joanne: They receive a slip that they can show to the guards and go about the building.
+
+Locke: Ugh.. way too complicated.
+
+Jones: (Yep,  my head hurts...)
+
+Locke: Argh! This secrecy means it's impossible to narrow down how many people were here...
+
+Jones: (Wait a moment...)
+
+Jones: There may be a way, though. All we have to do is check...
+
+OPENLOG: [opt4]
+
+Jones: Every VIP member would need to get a fingerprint test done at the reception, right?
+
+Locke: Yes...?
+
+Jones: All we would need to do, then, is check the number of fingerprint tests done today. That would give us a number, at least.
+
+... : [EXIT_L2]
+
+Jones: Kid, could you... Kid?
+
+Joanne: He just dashed away to the reception... probably to check it out.
+
+Jones: Whatever he comes back with, we need to talk to Charles about it. He may not want to cooperate, but he can't impede an investigation.
+
+Joanne: Yeah... Run me through what we know, could you?
+
+Jones: Hm.. We've established that the killer.. Was not you.
+
+Joanne: Hah!
+
+Jones: Heh, yes, the killer had to have been wearing gloves. For safety. 
+
+Jones: What we haven't thought of yet is how the scene was set up. The killer had a small time frame to enter the office, spill the puddle...
+
+Jones: ...connect the wires, and leave. How did they not get spotted by you?
+
+Joanne: Well... there was a short span where no one was there. I uh.. Blurted it out while your bozo captain was busy accusing me...
+
+Jones: You were in the bathroom, right?
+
+Joanne: Yeah. He said I have no alibi for that... and he's right. But... again, I have no way to prove it, but I heard footsteps.
+
+Jones: (Footsteps, huh? Where have I heard that before?)
+
+OPENLOG: [opt5]
+
+Jones: Didn't Charles say something about how well the footsteps echo in the hall?
+
+Jones: I think it's reasonable to believe that you heard footsteps. It's also reasonable to believe they were being made...
+
+Joanne: ..By the killer. But when I came out, all I saw was some cleaning staff member and that captain coming towards the office.
+
+Jones: Hm... anyway, now we know that the killer had to have been a ministry VIP. We don't know who all, but we can at least find out the number-
+
+... : [LOCKE ENTERS2]
+
+Locke: DETECTIVE!
+
+Jones: -Soon. What ya got, Kid?
+
+Locke: Here's the receptionist's note. But...
+
+Jones: Go on, Kid.
+
+Locke:  In short... There was only one fingerprint test done today.
+
+Joanne: Just one!? 
+
+Joanne: But-but that only leaves...
+
+Jones: Captain Charles.
+
+Locke: What.. What do we do? 
+
+Locke: How do we even approach him?
+
+Jones: It's too early to be forming conclusions. We need to collect more evidence...
+
+Jones:  And the best place to do that would be...
+
+OPENLOG: [opt6]
+
+Jones: Charles' office in the building. We might find some clues...
+
+Joanne: Let's go.
+
+CHARLES' OFFICE: [13]
+
+Jones: (Charles' office at the ministry, huh? ...It's almost identical to the one at the bureau.)
+
+Joanne: Hmph! At least your arse of a captain has decent taste in furniture.
+
+Locke: Wow, miss Joanne... you're complimenting your accuser? That's very noble.
+
+Jones: (I'd rather investigate than get involved in whatever these two are on about..)
+
+INVESTIGATION: [inv]
+
+Jones: (I thought we'd find clues... but this just points things towards Charles more...)
+
+Locke: Detective, do you think those gloves are...
+
+Jones: It could be, kid. Though I don't understand what this file is about.
+
+Joanne: Hey, hold on. I've seen that file before. It was in the boss's office.
+
+Jones: Could this be..
+
+OPENLOG: [opt7]
+
+Locke: Oh goodness...
+
+Joanne: No way...
+
+Jones: There's only one way to know.. Asking the man himself.
+
+Locke: Detective.. You can't possibly be accusing the Captain just like that...
+
+Jones: Let's go over the facts, shall we?
+
+Jones: A file the Minister may have been looking for magically ends up on Charles' desk.
+
+Jones: He's brought gloves too. Perfect for staying safe from electrocution.
+
+Jones: He is a man who knew about the building's recent power issues, and used it to accuse Joanne.
+
+Jones: And he was the only VIP, and thus the only person with uninterrupted access to the minister's room.
+
+Jones: Regardless, I think it's time we request an audience with his majesty.
+
+HOMEN'S OFFICE: [14]
+
+Charles: Hmph, finally returned, have we?
+
+Jones: Charles. I'll need you to answer a few questions. But first, let me re-examine the crime scene.
+
+Charles: Hah, by all means! It's your case now, after all.
+
+INVESTIGATION: [inv]
+
+Jones: (Nothing's been tampered with. I suppose I should get on with the questions.)
+
+INTERROGATION: [inv]
+
+Charles: Why yes... it's what Homen went back looking for. Where did you find it?!
+
+Jones: That can wait. Now, my partners and I established that there could be more people who had unfiltered access to the minister's room.
+
+Charles: And they would be...?
+
+Jones: VIPs such as yourself.
+
+Charles: What in the... you dare disrespect us?! We are top officials, Athena. It's improbable for us to stoop to murder.
+
+Jones: And yet, it is possible, is it not? Which brings me to my next question.
+
+Jones: Who all were the VIPs involved in the records room meeting?
+
+Charles: I-it's confidential information. A private meeting of sorts. Four people were to attend.
+
+Jones: Were even the guards not informed?
+
+Charles: No. Top secret is top secret. We specifically organised it while they were off duty. 
+
+Jones: Right. So four people. Interesting...
+
+Charles: Where are you going with this, Ms. Athena?
+
+Jones: Just collecting some information. Finally, would you agree that the killer was wearing gloves at the time of the murder?
+
+Charles: After your... belittling demonstration this morning, it would be impossible for them not to.
+
+Jones: Hm, very well then. So let me add to a few things you said just now.
+
+Jones: You said that four people were to attend the meeting, but we have evidence against that.
+
+OPENLOG: [open3]
+
+Jones: Only one slip was issued today. Presumably by you, Captain. How were there four people?
+
+Charles: ...
+
+Charles: Fine, I should let you know. Neither of the other members showed up to today's meeting.
+
+Jones: And why would that be?
+
+Charles: One died, and the other arrested as the murderer. I cannot reveal anything more.
+
+Jones: (What the...?)
+
+Jones: (Calm down, Athena. You're here to bring out the facts. Don't get derailed.)
+
+Jones: (Show him that you won't back down.)
+
+Jones: So... perhaps VIP members do stoop to murder, Captain.
+
+Locke: !?
+
+Charles: What... Did you just say?
+
+Joanne: She said, you VIP folks DO stoop to murder, you dipshi-
+
+Jones: Jo, relax.
+
+Charles: ...
+
+Charles: I've had enough. 
+
+Charles: Consider this your last case, Jones.
+
+Joanne: What!?
+
+Locke: No! You.. you can't do that!
+
+Charles: Tch. We've been planning to let you go for a while now, Detective. After the war, we were forced to hire folks from the front lines.
+
+Charles: But the war is over. And so will be your work as a detective. Consider this a blessing, please. 
+
+Charles: Because otherwise, we would have had to use more... extreme methods, shall we say?
+
+Joanne: You...
+
+Locke: Detective!
+
+Jones: (......)
+
+Jones: (It's clear then.)
+
+Jones: (I... may have lost my job.) 
+
+Jones: (But with it, I've also lost every shadow of doubt.)
+
+Jones: Thank you, Captain.
+
+Locke: ?!
+
+Jones: If this is my last case, so be it. 
+
+Jones: But it's not over yet. And trust me, I'll finish it.
+
+Charles: Tch! As vile as a lawyer. Using my words against me now, are we?
+
+Jones: Not just words, Captain.
+
+Jones: You asked about the file, right? Well, I'll tell you where we found it.
+
+OPENLOG: [opt8]
+
+Charles: What...!
+
+Jones: Interesting, is it not? The very file the minister was looking for, sitting comfortably at your place.
+
+Charles: But that's impossible... How did it end up there? I was waiting at the records room the whole time.
+
+Jones: Were you, though?
+
+OPENLOG: [open4]
+
+Jones: We found these scattered files in the records room. They all contain a massive list of people.
+
+Charles: That contains confidential data, detective.
+
+Jones: I don't care about the names. The point is, this list does not make any sense without context. Perhaps as a result, you went looking for...
+
+OPENLOG: [open5]
+
+Jones: The cover file. You thought that it might contain the details you needed, so you went looking for it.
+
+Charles: ...Heh. Heh heh hah!
+
+Joanne: What's so funny, you little-
+
+Charles: Hah! And here I was, thinking you could make a point.
+
+Charles: Ms. Athena, tell me. Why would I need to do that? Homen had already gone to bring the file! I didn't need to go either way!
+
+Joanne: !?
+
+Locke: ...?!!
+
+Jones: ...
+
+Jones: (He's right. Why would he need to go?)
+
+Jones: (All the evidence hinges on this. Otherwise.. It may all be circumstantial.)
+
+Jones: (Think, Jones... What else can explain the situation?)
+
+Jones: (How else could he end up on the scene?)
+
+OPENLOG: [opt9]
+
+Jones: (Maybe.. It's not about how. Maybe an alternative explanation doesn't exist. But he was there. He had to be there.)
+
+Jones: (Then I must figure out the 'why'..)
+
+OPENLOG: [opt10]
+
+Jones: (What if... it was incriminating, somehow...? What if the file could put Charles under scrutiny? That would mean he couldn't let the minister see it.)
+
+Jones: (In other words... a motive.)
+
+Charles: Hm, Athena? Dumbfounded?
+
+Jones: Captain. I need to take a look inside the file.
+
+Charles: No! As your superior officer, I can't let you do that. How many times do I have to say it's confidential, woman!
+
+Jones: That's the thing. You've been obsessed with these files, this meeting, being 'confidential'. What if I propose they are not?
+
+Jones: What if they are.. Incriminating, to a certain high profile individual? What if it were in the interests of a VIP to KEEP it 'confidential'?
+
+Jones: I won't read the files, Captain. But it does make me suspicious.
+
+Charles: Hahaha! Formally accusing a VIP then, Jones?
+
+Jones: Yes, captain. A VIP who perhaps left a plate in the records room to create an alibi, as if they were eating.
+
+Jones: A VIP who knew about the electrical issues of the building. A VIP who used that info to accuse another of the crime.
+
+Jones: A VIP who wanted to protect themselves from electrocution, and as a result, these were found in their office:
+
+OPENLOG: [open6]
+
+Jones: Gloves. Just as I had suggested this morning. Found in the same office as the file you're holding, Captain.
+
+Charles: ..!?
+
+Jones: You were the only VIP in the building, Charles. The person all the evidence points to... is you.
+
+Charles: ...!
+
+Locke: ...
+
+Joanne: ...
+
+Charles: You're a bold one, Jones. But you picked the wrong fight today.
+
+Charles: It's your final case, so I'll entertain this charade. Let's say, hypothetically, I did it. But how?
+
+Charles: Modus operandi, Jones. Do you have any way to answer that?
+
+Jones: (He's keeping his cool... And I should as well.)
+
+Jones: I do have an answer, or else I wouldn't have accused you.
+
+Charles: ..!
+
+Jones: There was a confidential meeting. But the minister forgot a file. It contained something you couldn't let him see, so you made your way to retrieve it before he could.
+
+Jones: Joanne was in the bathroom during this time. As you'd said earlier, footsteps echo well in the hallway.
+
+Jones: She said she heard some footsteps. I believe they were made by none other than...
+
+OPENLOG: [opt11]
+
+Jones: You, Captain.
+
+Jones: You came to snatch the file from the office and leave it at yours. The trouble was, the minister would keep looking for it.
+
+Jones: A secret meeting involving just four members, only one of whom was present in the building. It would have been simple for the minister to narrow it down to you, no?
+
+Charles: ...
+
+Jones: And then you realised... The only way to guarantee your safety was to eliminate the threat entirely.
+
+Jones: So you returned to the scene of the theft, saw the secretary, and formulated a plan. You spilled some water, connected the wires and voila! An accident.
+
+Jones: Perhaps you realised the secretary could be framed as a fall guy, in case enough evidence was unearthed...
+
+Jones: Meanwhile, the minister returns, begins to search, and... the rest is history.
+
+Jones: And that's how you did it.
+
+Charles: ...
+
+Charles: ...Hah!
+
+Jones: ?
+
+Charles: Bravo, detective, bravo! A stunning hypothesis. Really, I'm disappointed I have to let someone like you go...
+
+Joanne: Spill it, brute.
+
+Charles: Oh, no, don't get me wrong. It really is a good hypothesis. But I'm afraid that's all it is.
+
+Locke: ...
+
+Charles: Oh! Looks like even the lackey has caught on to what I'm saying. Mind explaining it to our cute secretary?
+
+Locke: I... detective.
+
+Jones: (This poor kid..) Go on, Locke.
+
+Locke: The whole case.. It hinges on confidentiality. But what if the contents of the file... were not incriminatory...?
+
+Charles: BINGO! You have NO grounds to make an arrest if that's the case. Invalid evidence, Detective!
+
+Charles: You don't even know if anything about the file is about me, Jones! And I will not let you confirm it. Neither will the government...
+
+Joanne: !?
+
+Charles: Choose your next words wisely, Jones.
+
+Jones: (...)
+
+Jones: (There's nothing left to do. Nowhere to turn to.)
+
+Jones: (And it's all because of 'confidentiality'.)
+
+Jones: (What do I say?)
+
+Charles: Dumbfounded again?
+
+Jones: ('Confidentiality'. What is the need for it? Why does Charles want to hide it...)
+
+Charles: Or ran out of retorts, have we?
+
+Jones: (How do I bring out the truth? HOW do I declassify confidential documents?)
+
+Joanne: Thena! He's getting away...
+
+Jones: (There's no way for me to look at the documents without penalties, but...!)
+
+Jones: (What if *I* don't need to?)
+
+Charles: Well, if you have nothing more to add, I'll be on my way-
+
+Jones: Just a moment, Charles. 
+
+Charles: Damn it..
+
+Jones: You're under arrest. 
+
+Charles: HAHAH! I'll miss your partner's humour, lackey!
+
+Jones: It isn't a joke.
+
+Charles: What.
+
+Jones: You're right. I can't confirm the contents of the file. But someone else can. They are...
+
+OPENLOG: [opt12]
+
+Jones: If a jury pleases, they can demand the showing of the contents of the file. Rendering whatever is inside as valid evidence.
+
+Jones: The rest of the evidence is clear as day, and you have no reasonable explanation to invalidate it either.
+
+Jones: So do I have grounds for arrest now, Captain? Oh, sorry, just Charles now. I think the case might be over, so.. no longer your underling detective.
+
+Jones: Charles?
+
+Charles: ...
+
+Charles: ...Jones. Athena JONES... You.. you...! 
+
+Charles: I'll have you killed! I'll have all of you killed!
+
+Jones: Whoa, big guy. Hands in the air.
+
+IN ATHENA'S MIND: [15]
+
+Jones: (And.. I suppose that's how it ends.)
+
+Jones: (This case.. And my career as a detective.)
+
+Jones: (Look at him. Desperately clutching at a secret.)
+
+Jones: (Desperate enough to get arrested over it.)
+
+Jones: (Desperate enough... to kill for it.)
+
+Jones: (Just... why?)
+
+Jones: (Why did he not back down, even after all the evidence pointed to him?)
+
+Jones: (Why did he need to fire me? Why did he say that getting fired was a blessing?)
+
+Jones: ('Extreme measures'... his words are still echoing in my head.)
+
+Jones: (The other members of that meeting... Who were they? What happened to them? Charles said one died, and the other was arrested... as a murderer?)
+
+Jones: (Just what was that meeting even about? What was in that file?)
+
+Jones: (Why was I not even allowed to touch it after Charles got a hold of it?)
+
+Jones: (Why...?)
+
+AT HOME: [16]
+
+Jones: (It's 12:00 at night... and the case won't leave me alone. We came back from the Bureau an hour ago.)
+
+Jones: (Locke went home... that poor kid. I hope someone else looks over him at the office. I'll visit him... But I wish I could get him to leave that cursed place.)
+
+Jones: (Joanne... It's been a long day. She plopped asleep the moment we entered the apartment...)
+
+Jones: (For all that happened today.. I never did fully clear her name. I trust her, but..)
+
+Jones: (There were so many unanswered questions... the meeting, the people...)
+
+Jones: (And of course.. The contents of the file. If only I'd taken a better look before confronting Charles...)
+
+Jones: (I suppose... it doesn't matter anymore. I'm no longer a detective. But the thoughts won't leave my mind...)
+
+Jones: (...)
+
+Jones: (... I'll just go over the evidence. Maybe.. Just maybe it'll ease my mind.)
+
+Jones: (Firstly... Do I have anything which could give a hint about the contents of the file..?)
+
+OPENLOG: [open7]
+
+Jones: (Right, this might be useful. A list of people... I should go over it.)
+
+Jones: ('Aava Thomson', 'Abigail Clark', 'Alex Johnson'... I don't know any of these people..)
+
+Jones: (There's multiple Alex's, Jonathan's, Ethan's and Charles' here.... None of them have our good old Captain, though. Hm...)
+
+Jones: (...!)
+
+Jones: ('Athena'...? Why is my name on here? What the hell?...Athena, Last Name Unknown...Well.. it could be ANOTHER Athena...)
+
+Jones: (L, L , Lo... Locke Sher... Locke's name isn't on here...)
+
+Jones: (...! 'Joanne'..? Jo's in here..? What in the... Actually, there's multiple Jo's.. Joanne Williams, Joanne Denim...)
+
+Jones: (And only one, whose last name is not known...)
+
+Jones: (Maybe....Hopefully...a coincidence...)
+
+Jones: (...'James'...)
+
+Jones: (There's 10 to fifteen James'...Jackson, Colson, Toulson, Max...)
+
+Jones: (But....)
+
+Jones: (One... one's surname... is not known.)
+
+Jones: (This is too much of a coincidence...James, Joanne and I?...There may be multiple of them but...)
+
+Jones: (Am I overthinking this...??)
+
+Jones: (Maybe....maybe not.. Better safe than sorry, I presume.)
+
+Jones: (...)
+
+Jones: (I need to speak to someone about this. Someone on here...or someone who I suspect is on here...)
+
+Jones: (Joanne... I would, but... she's gone through so much today. And I was never able to prove that she was fully innocent.)
+
+Jones: (Maybe it's for the best if I don't get her involved...)
+
+Jones: (I suppose that only leaves... James.)
+
+Jones: (...)
+
+Jones: (I'll keep a note out for Jo in case she wakes up. Let's go.)
+
+JAMES' HOUSE: [17]
+
+Jones: *Ding-Dong* (I hope he's home.)
+
+Jones: *Knock* *Knock* (...?)
+
+Jones: (It's open... I suppose I should just enter.)
+
+LIVING ROOM: [18]
+
+Jones: (Hm... say what you will about the library aesthetic, but it is a cosy living room. I should wait for James here...)
+
+Jones: (I have fond memories of this place. We used to study here in college. He'd always be after books... And I was after law.)
+
+Jones: (Funny how things turned out after that. The war began, he got drafted, and I was also called upon as a medic. I guess that's why blood never bothered me as a cop.)
+
+Jones: (We went into the war together. We thought we'd get out together, but he told me he got a discharge.)
+
+Jones: (...)
+
+Jones: (We didn't see each other for a long time after that..)
+
+Jones: (It doesn't matter. I suppose it was for the best. Or else I wouldn't have met Joanne on the front lines...)
+
+Jones: (...)
+
+Jones: (While I wait for James... maybe I should have a look around. For old time's sake.)
+
+INVESTIGATION: [inv]
+
+Jones: (...Hold on. I recognise the smell of the perfume.. It-it was...)
+
+OPENLOG: [open8]
+
+Jones: (I-I've smelled it before, too. Before today...)
+
+BENHITO'S: [19]
+
+Jones: "(...At least the room smells nice.) And who found it?"
+
+THE ROAD: [20]
+
+Jones: "(Ah, at least the smell of lavenders accompanies me. It was with us at Benhito's as well...)"
+
+LIVING ROOM: [21]
+
+Jones: (What... What does any of this mean? And the outfits... they are.. Just as familiar...!)
+
+BENHITO'S: [22]
+
+Maria: An alibi.. Well, a *mailman* had come to deliver letters. Bless his heart! He said the cooking smelled lovely, so I sat him down and let him have a taste!
+
+ZIMMERMAN'S: [23]
+
+Jones: You were the last person he met that day, is it not? At a bar no less. I doubt there would be anyone else except a groggy *bartender*.
+
+RECORDS ROOM: [24]
+
+Joanne: ..By the killer. But when I came out, all I saw was some *cleaning staff* member and that captain coming towards the office.
+
+LIVING ROOM: [25]
+
+Jones: (I... I...)
+
+Jones: (The emblem on the janitor's uniform... It matches the ministry's.)
+
+Jones: (That.. that file... it looks identical to the one we found in Charles' office..)
+
+Jones: (It reads... 'Operation Lavender: Eliminating homosexuals from federal positions and erasing suspected individuals for the security of the nation.')
+
+Jones: ('Key members: Minst. Of Home Affairs Homen Ofobia, Lead Scientist Prof. Zimmerman, Warden Columbus Olfonso, Captain Charles Kane.')
+
+Jones: (I...)
+
+... : [ENTER JAMES]
+
+James: Athena? Is that you? 
+
+Jones: ...J-James...
+
+James: My, how long have you been waiting out here? To what do I owe the pleasure?
+
+Jones: ...
+
+James: Athena...?
+
+Jones: H-Hands in the air, James!
+
+James: My, My, hold on-
+
+Jones: I SAID H-HANDS IN THE AIR! Up where I can see 'em!
+
+James: ...Alright.
+
+Jones: You... you..
+
+James: Hm. It was inevitable, I suppose.
+
+Jones: You... did it?
+
+James: ...
+
+Jones: ANSWER ME!
+
+James: ...What do you want me to say, Athena?
+
+James: I suppose you'd want to know how...
+
+Jones: So you don't deny it...!
+
+James: What's the point in denying it? Here I am, held at gunpoint. There's no escaping it.
+
+James: What would you like to ask me?
+
+Jones: ...How?
+
+James: It was simple... No one notices the common man, Athena.
+
+James: They're hiding in the background. Setting the stage for the actors. But with a good narrative, they too can impact the show.
+
+James: The first time... I bribed the mailman of that route. Fabricated a telegraph to trick that Anttonio fellow to the backdoor, and myself entered Benhito's apartment through the front..
+
+James: ..In the guise of a mailman. No one would find it suspicious of the mailman to enter and leave an apartment now, would they?
+
+Jones: ...!
+
+James: I entered, strangled his dreams with the bell rope... and left through the front. As a mailman would.
+
+James: Though the woman at the house held me up for a bit, I was able to see Anttonio fall right for the bait. It was perfect, or so I'd thought.
+
+James: The second time... I'd taken a part time job as a bartender a week earlier.
+
+James: I had a plan. I wanted to kill the warden in the bar. I had all the evidence ready to frame Zimmerman as well.
+
+James: But... you'd come along, detective. I learnt of the previous incident's proceedings from an informant.
+
+Jones: ...an informant..?
+
+James: Hm, you know her, Athena. A certain Joanne Roberts, perhaps?
+
+Jones: ...J-Joanne...?
+
+James: She reached out to me. We...knew each other through... someone. She wanted to avenge them. All I did was provide the means.
+
+Jones: ...!
+
+James: Joanne told me that before his arrest, Anttonio kept muttering something about a shadowy figure.. I was almost spotted, Athena.
+
+James: I realised now I had to make myself completely invisible... And I ditched the idea of killing the warden in the bar itself. It was too risky.
+
+James: I collected my thoughts, and... came up with a plan. Prepare a special blend for the warden, packed with enough booze in it to send him to hell and back.
+
+Jones: But... you wanted to frame Zimmerman...
+
+James: Yes, a bit of a dilemma. But I am quite proud of the little solution I came up with. When looking into the Warden and Zimmerman... I realised that they shared a route.
+
+James: A busy route, known for its fair share of accidents. It wouldn't be out of the ordinary if they both crashed, no? Perhaps one could die, and the other get blamed for it.
+
+James: I attempted to ensure it by fatally spiking the warden's drink, and giving Zimmerman a lower dose, just enough to perhaps crash into the warden and survive.
+
+Jones: ...No, no! How did you ensure that they would crash?
+
+James: Simple! All I had to do was ask Zimmerman to keep an eye out and tailgate the warden's car. He practically set up the accident for me!
+
+James: Still, I made my way to the crime scene the next morning, because it was a last minute plan. And that's where I found...
+
+Jones: Me...
+
+James: Yes, Athena, You. You fought valiantly with what you had. And you did catch a criminal... just not the killer. 
+
+Jones: ...So that's why you abruptly left when we were about to head to Zimmerman's... He-he would have recognised you from the bar.
+
+James: Yes.. and that's when you imparted a key wisdom to me: "A good killer never returns to the scene of the crime". Which is exactly what I'd done.
+
+James: So many things could have gone wrong just because of that change in plan, Athena. Which is why I decided to stick to my methods for the third death.
+
+James: Two months back, I'd taken another part time job in the ministry as a janitor. Which gave me unrestricted access to clean the rooms of every office.
+
+James: Today, I went over to the office, spilled the perfume, set up the wires, and left before anyone could spot me. And even if they did...
+
+Jones: You'd be invisible...
+
+James: And I was... Naturally, I'd organised my shift such that after the minister's office I would always clean the police captain's. All I had to do was pick up the files, leave them..
+
+James: ..on his desk, and plant the gloves. After that, I left the scene completely. I didn't come back to the scene this time... A perfect crime, perfect evidence, and yet...
+
+James: Here you are, Athena.
+
+Jones: Here I am...
+
+Jones: I-I don't understand two things, James.
+
+James: And what would those be?
+
+Jones: Firstly... How did you select your hit list? H-How did you get that file?
+
+James: I told you, didn't I? I had an informant. A partner in "crime".
+
+Jones: Joanne...
+
+James: She risked herself and sifted through classified documents.. And then sent me a copy of one that stood out. The one lying on the table. My 'hit list', so to speak.
+
+James: Gruesome details of an undercover operation... and the high profile individuals associated with it.
+
+Jones: ...
+
+Jones: Secondly, James...
+
+Jones: Why? Through whom did you come to know Joanne? Who did she want to avenge? Why did she want to avenge them? Why did you agree, James? Why do all this?
+
+Jones: WHY!?
+
+James: You, Athena.
+
+Jones: ...!?
+
+James: You, and Joanne, and Me and... Ethan. And countless others who were, and remain, on the path of being "eliminated". Their names are on that list you're holding...
+
+Jones: (The list of names which lead me to James...)
+
+James: We've been hanged, electrocuted, and god knows what else. 'Erased', just because we were different. Just because we are deemed a 'threat'.
+
+James: I know who you truly are, Athena. I know what Joanne is to you. I know because Ethan... was my Joanne. 
+
+James: We had the best of "partnerships". We shared a house, a life, an inkling of love. 
+
+James: He had a weird habit you know, he never used my real name. All he ever called me was "Honey". 
+
+James: One day, the police caught up with him. They arrested him on trumped up charges of....of speeding, can you imagine? 
+
+James: They arrested him and jailed him for four years.... for speeding! 
+
+James: The day of his release, I was overjoyed, but... he never came back home. He crashed into a tree, intoxicated.
+
+James: Ethan never drank alcohol. Never touched it. It was too sweet, he said. 
+
+James: When he never made it home... I knew something was wrong. I was soon contacted by his sister. She wanted to find out what happened to her brother, to ascertain the truth.
+
+James: 'Joanne Roberts', Ethan Robert's sister. She told me she was a secretary at the Ministry of Home Affairs, and would do what she could to find information. 
+
+James: And one day, she struck gold.
+
+James: A crumpled up note... in Ethan's handwriting. The guards, they.. they must have intercepted it. The date was from when he was in prison.
+
+James:  He... he was so scared, Athena. He wrote about an Operation Lavender.. He wrote about the guards who mercilessly tortured him...
+
+James: He wrote about how he loved me... but was forced to hide my name. I learnt that even in death, he never spoke my name.
+
+James: He... tried to protect me. Those killers found out about me eventually... But he protected me, even while being tortured... I...
+
+Jones: ...
+
+James: This was over a year ago, Athena. I used the last year to prepare myself. To plan, to theorise, to understand. 
+
+James: I learnt about the Operation, asked your "partner" to help me get details of what it was, who it contained. And then, I started. My righteous crusade of vengeance. 
+
+James: And I wanted you to understand, Athena. You were trapped, working for the same government, which jails and kills your kith and kin! 
+
+James: You never questioned it, because you never knew about it. 
+
+James: I knew that in this town, you were the best detective, and if any high profile murders were to occur, you and only you could be chosen to investigate. 
+
+James: I knew that you would not stop till you knew the truth- the FULL truth. 
+
+Jones: ...
+
+James: And you didn't. I know, you started questioning yourself. Your life, your "partner's" life, and all our lives. 
+
+James: I know you became hesitant, but at the same time, more proud of who you actually were. 
+
+James: I know you wish to fight for us, and not work against us. 
+
+James: So, I ask you, will you join me, or arrest me?
+
+OPENLOG: [opt13]
