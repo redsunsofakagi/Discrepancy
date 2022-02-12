@@ -1,10 +1,7 @@
 from tkinter import *
-from tkinter.tix import *
-from tkinter.font import Font
+from tktooltip import ToolTip
 from tkinter import ttk
-from PIL import Image, ImageTk
 import time
-import threading
 import sys
 from pyglet import font
 import os
@@ -439,7 +436,6 @@ def openlog():
         second_frame=Frame(evicanvas)
         evicanvas.create_window((0,0), window=second_frame, anchor='nw')
         CaseText=ttk.Label(second_frame, text='', font=('Special Elite Regular', 15), wraplength=300)
-        hover=Balloon(menu)
 class Evi:
     def __init__(self, img, desc, selec, check=None):
         self.img=PhotoImage(file=img)
@@ -451,7 +447,7 @@ class Evi:
         str1= self.selec
         b=Button(second_frame, height=70, width=70)
         b['image']=self.img
-        hover.bind_widget(b, balloonmsg=self.desc)
+        ToolTip(b, msg=self.desc, delay=0.001)
         CaseText.pack(side=RIGHT)
         b.pack(side='top')
         def click():

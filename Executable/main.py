@@ -1,16 +1,13 @@
 import pygame
 from tkinter import *
-from tkinter.tix import *
-from tkinter.font import Font
+from tktooltip import ToolTip
 from tkinter import ttk
-from PIL import Image, ImageTk
+from PIL import Image
 import time
-import threading
 import sys
 from pyglet import font
 import os
 import button
-from PIL import Image
 
 pygame.init()
 infoObject = pygame.display.Info()
